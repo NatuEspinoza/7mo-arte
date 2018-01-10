@@ -199,23 +199,6 @@ table {
 /* Fin Calendario Eventos */
 /* Fin Sección de eventos */
 
-/* Section Profile */
-.profile {
-	background: #F0EAD6;
-	height: 30em;
-	color: #FFF;
-}
-
-.user-box {
-	margin: 3em 0 3em 0;
-	text-align: center;
-}
-
-.user-img {
-	width: 15em;
-	height: 15em;
-}
-/* Fin Section Profile */
 
 /*------------------------------------*/
 /*         SECCION PRESENTATION         */
