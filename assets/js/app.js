@@ -24,7 +24,7 @@ $(document).ready(function() {
  * Función para Carrusel
  */
  (function(){
-   $('#carousel123').carousel({ interval: 2000 });
+   //$('#carousel123').carousel({ interval: 2000 });
 
    $('.carousel-showsixmoveone .item').each(function(){
      var itemToClone = $(this);
