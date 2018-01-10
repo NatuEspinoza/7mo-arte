@@ -84,18 +84,14 @@
                   </div>
                 </form>
                 <form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
-                  <div class="form-group">
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-                  </div>
+
                   <div class="form-group">
                     <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
                   </div>
                   <div class="form-group">
                     <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
                   </div>
-                  <div class="form-group">
-                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-                  </div>
+
                   <div class="form-group">
                     <div class="row">
                       <div class="col-sm-6 col-sm-offset-3">
@@ -111,6 +107,91 @@
 
       </div>
 
+    </div>
+  </div>
+</div>
+
+  <!-- modales para cines -->
+  <!-- modal cine 1 -->
+  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- parte superior del modal -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <!-- contenido -->
+       <!-- modal cine 1 -->
+  <div class="movie-card">
+    <div class="container">
+
+   <!--    <div class="row">
+        <div class="col-xs-12 col-lg-6"> -->
+      <a href=""><iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.424933058628!2d-70.64248674647605!3d-33.43823404431558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c599482afe51%3A0x995c385d969e5069!2sJos%C3%A9+Victorino+Lastarria+181%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1515589255631" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></a>
+      
+          <!-- descripcion del cine -->
+          <!-- <div class="back-cover">
+            <div class="details">
+              <div class="title1">El Biógrafo</div>
+            </div>
+          </div> -->
+
+          <!-- primera columna -->
+          <div class="about-movie">
+            <div class="colum-one">
+              <div class="details">
+                <div class="title1">El Biógrafo</div>
+              </div>
+              
+              <!-- imagen del cine -->
+               <a href="#"><img src="assets/img/cines/biografo.jpg" class="img-biografo"></a>
+              
+              <!-- clasificacion de estrellas -->
+              <fieldset class="starRating">
+                <input id="rating1" type="radio" data-length="1" name="rating" value="1">
+                <label for="rating1"></label>
+          
+                <input id="rating2" data-length="2" type="radio" name="rating" value="2" checked>
+                <label for="rating2"></label>
+          
+                <input id="rating3" type="radio" data-length="3" name="rating" value="3">
+          
+                <label for="rating3"></label>
+          
+          
+                <input id="rating4" data-length="4" type="radio" name="rating" value="4">
+                <label for="rating4"></label>
+          
+                <input id="rating5" data-length="5" type="radio" name="rating" value="5">
+                <label for="rating5"></label>
+              </fieldset>
+              <span class="likes">90 likes</span>
+            </div><!--end colum-one -->
+            
+            <!-- segunda columna -->
+            <div class="colum-second">
+              <p>Dirección: José Victorino Lastarria 181, Santiago, Región Metropolitana</p>
+              <p>Teléfono: (2) 2664 8821</p>
+              <p>horario: 13:00 - 23:30</p>
+            </div>
+          </div>
+
+      <!--  </div>
+      </div> -->
+    <!--end -about-movie -->
+    </div>
+  <!--end container -->
+  </div>
+  <!--end movie-card-->
+
+
+
+
+
+      
     </div>
   </div>
 </div>
@@ -380,13 +461,7 @@
     7°Arte <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2018
   </footer>
 
-  <!-- modal con login y registro -->
 
-
-  <!-- modal de los cines -->
- 
-
-  <!-- Scripts -->
 
 <!-- filtro de pelis -->
 <!--  
@@ -405,7 +480,6 @@
 
 
   <!-- Scripts -->
-  
   <script src="assets/js/jquery-3.2.1.min.js" type="application/javascript"></script>
   <script src="assets/js/app.js" type="application/javascript"></script>
   <script src="assets/js/bootstrap.min.js" type="application/javascript"></script>
