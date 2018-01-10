@@ -19,10 +19,14 @@ Por qué  van a los cine artes:
 * Gusto por lo vintage, clásico, lo retro…
 *Películas de cine independiente o poco conocidas
 
+<<<<<<< HEAD
 ## 3-Definición del usuario
+=======
+## 3-Diseño
+>>>>>>> 18723459571093cae23f2a5195e6205152de7493
 
-![Diseño / Sketching](assets/img/VISTA INICIAL.jpg)
-![Diseño / Sketching](assets/img/VISTA DESDE EL PERFIL.jpg)
+![Diseño / Sketching](assets/img/INICIAL.jpg)
+![Diseño / Sketching](assets/img/PERFIL.jpg)
 
 
 - Recursos:

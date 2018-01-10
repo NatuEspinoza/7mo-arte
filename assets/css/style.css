@@ -1,6 +1,10 @@
+
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -19,6 +23,11 @@ h1 {
   height: auto;
 }
 
+#lista {
+  display: inline-block;
+	float: left;
+
+}
 /*Fin Nav Bar */
 
 /* Section Profile */
@@ -194,3 +203,398 @@ table {
 }
 /* Fin Calendario Eventos */
 /* Fin Sección de eventos */
+
+
+/*------------------------------------*/
+/*         SECCION PRESENTATION       */
+/*------------------------------------*/
+.presentation 
+{
+  background-image: url(../img/back.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: bottom;
+  height: 30em;
+/*  color: #FFF;*/
+  margin-top: 4em;
+}
+
+.summary
+{
+  color: #0f1626;
+  font-size: 2em;
+  text-align: center;
+}
+
+.desc
+{
+  color: ;
+  font-size: 1.5em;
+  padding: 3em 5em;
+}
+
+/*------------------------------------*/
+/*         SECCION TENDENCIAS         */
+/*------------------------------------*/
+/*Estilo seccion tendencias*/
+.tendency
+{
+	background-color: #FF533D;
+	padding: 3em 6em;
+}
+
+/*Estilo titulo tendencias*/
+.title-ten
+{
+	color: #F0EAD6;
+/*	margin-bottom: 1.5em;*/
+}
+
+.menu-ten 
+{
+  margin-top: 1em;
+  font-size: 2em;
+  background: #0f1626;
+  color: #FFF;
+}
+
+/*Estilo seccion cines*/
+.cinemas
+{
+	background-color: #F0EAD6;
+	padding: 3em;
+}
+
+
+/*------------------------------------*/
+/*            SECCION CINES           */
+/*------------------------------------*/
+/*Estilo titulo cines*/
+.title-cinemas
+{
+	color: #FF533D;
+	margin-bottom: 1.5em;
+	margin-left: 1.5em;
+}
+
+/*Estilos nombre de los cines*/
+.title-small-cinema
+{
+	color: #FF533D;
+	text-align: center;
+}
+
+
+/*-------------------------------------*/
+/*                FOOTER               */
+/*-------------------------------------*/
+/*-----Estilo footer-----*/
+footer
+{
+	background-color: #0f1626;
+	color: #FF533D;
+	height: 5.5em;
+	padding-top: 2em;
+	width: 100%;
+	text-align: center;
+} 
+
+
+
+/*-----------------------------------*/
+/*      ESTILO CARS DE LOS CINES     */
+/*-----------------------------------*/
+
+.modal-title-cinemas
+{
+  text-align: center;
+}
+
+/*estilo mapa*/
+.map
+{
+/*  position: relative;*/
+  width: 400px;
+  height: 200px; 
+  margin-top: 0.3em; 
+/*  margin-left: 1em;*/
+  margin-bottom: 0.8em;
+  text-align: center;
+/*  border: 2px solid #FF533D;*/
+  border-radius: 0.7em;
+ /* z-index: 1;*/
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 430px !important;
+    height: 450px !important;
+    overflow: hidden;
+  }
+
+}
+
+.movie-card {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  color: #A9A8A3;
+  padding: 40px 0;
+  font-size: 2em;
+}
+
+.movie-card .container {
+/*  margin: 0 auto;*/
+  width: 500px;
+  height: 450px;
+  background: #F0F0ED;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sec
+{
+  text-align: left;
+}
+
+/*Estilo titulo del cine en el modal*/
+.movie-card .container .details .title1 {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 16px;
+  position: relative;
+  text-align: center;
+  margin: 1em 2em;
+}
+
+/*Estilo corazon del like*/
+.movie-card .container .likes:before {
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
+  position: relative;
+  top: 2px;
+  padding-right: 7px;
+}
+
+/*Estilo parrafos con direccion tel y horario*/
+.movie-card .container .about-movie {
+  display: inline-flex;
+  bottom: 0px;
+  height: 200px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B1B0AC;
+}
+
+/*estilo columna 1*/
+.movie-card .container .about-movie .colum-one {
+  padding-left: 50px;
+  padding-top: 5px;
+  width: 220px;
+  float: left;
+  text-align: left;
+}
+
+/*estilo segunda columna*/
+.movie-card .container .about-movie .colum-second {
+  padding-left: 50px;
+  padding-top: 20px;
+  margin-left: -39px;
+  width: 230px;
+  float: left;
+}
+
+/*start rate system style */
+fieldset {
+  border-color: #fff;
+  border-style: none;
+}
+
+.starRating {
+  margin-left: -22px;
+}
+
+.starRating > * {
+  float: left;
+}
+
+/* 
+some  animtion   do  when  load window 
+
+*/
+@-webkit-keyframes pulse {
+  50% {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #777777;
+  }
+}
+@keyframes pulse {
+  50% {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #777777;
+  }
+}
+.starRating label {
+  height: 40px;
+  width: 15%;
+  position: relative;
+  cursor: pointer;
+}
+
+.starRatinglabel:nth-of-type(5):after {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.starRating label:nth-of-type(4):after {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.starRating label:nth-of-type(3):after {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+.starRating label:nth-of-type(2):after {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.starRating label:nth-of-type(1):after {
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+
+.starRating label:after {
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  position: absolute;
+  content: "☆";
+  color: #444;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 40px;
+  -webkit-animation: 1s pulse ease;
+  animation: 1s pulse ease;
+}
+
+.starRating label:hover:after {
+  color: #5e5e5e;
+  text-shadow: 0 0 15px #5e5e5e;
+}
+
+.starRating input {
+  display: none;
+}
+
+
+.starRating input:checked + label:after,
+.starRating input:checked ~ label:after {
+  content: "★";
+  color: #F9BF3B;
+  text-shadow: 0 0 20px #F9BF3B;
+}
+
+
+/*------------------------------------*/
+/*  ESTILO MODAL DE REGISTRO Y LOGIN  */
+/*------------------------------------*/
+.panel-login {
+  border-color: #ccc;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+  color: #00415d;
+  background-color: #fff;
+  border-color: #fff;
+  text-align:center;
+}
+.panel-login>.panel-heading a{
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+  color: #029f5b;
+  font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+  height: 45px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+  outline:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+.btn-login {
+  background-color: #59B2E0;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+  color: #fff;
+  background-color: #53A3CD;
+  border-color: #53A3CD;
+}
+.forgot-password {
+  text-decoration: underline;
+  color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+  text-decoration: underline;
+  color: #666;
+}
+
+.btn-register {
+  background-color: #1CB94E;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+  color: #fff;
+  background-color: #1CA347;
+  border-color: #1CA347;
+}
+

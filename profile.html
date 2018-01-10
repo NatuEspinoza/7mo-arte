@@ -29,9 +29,9 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Busca por título, año, director, país...">
+            <input type="text" class="form-control" id="title" placeholder="Busca por título, año, director, país...">
           </div>
-          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          <button type="submit" class="btn btn-default" id="searchBtn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#movies">Películas</a></li>
             <li><a href="#cinema">Salas de Cine</a></li>
@@ -40,9 +40,14 @@
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+<<<<<<< HEAD
           <li><a href="index.html"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cerrar Sesión</a></li>
 
+=======
+          <li><a href="#"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cerrar Sesión</a></li>
+>>>>>>> 18723459571093cae23f2a5195e6205152de7493
         </ul>
+
       </div>
       <!-- /.navbar-collapse -->
     </div>
@@ -63,6 +68,14 @@
   </section>
   <!-- Fin Sección de mi perfil -->
 
+<!-- lista de peliculas filtradas -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="lista">
+      <ul class="list-group" id="results" ></ul>
+    </div>
+  </div>
+</div>
   <!-- Sección de Películas -->
   <!-- Filtro desplegable -->
   <div id="movies" class="container-fluid film">
@@ -292,11 +305,9 @@
   <!-- Fin de Próximos eventos -->
 
   <!-- Scripts -->
-
-  <script src="assets/js/jquery-3.2.1.min.js" type="application/javascript"></script>
+    <script src="assets/js/jquery-3.2.1.min.js" type="application/javascript"></script>
   <script src="assets/js/app.js" type="application/javascript"></script>
   <script src="assets/js/bootstrap.min.js" type="application/javascript"></script>
-
 
 </body>
 

@@ -1,18 +1,586 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es"> <!-- espanol -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
   <title>7mo Arte</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <link rel="stylesheet" href="assets/css/style.css">
+<<<<<<< HEAD
 
 </head>
+=======
+  
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCH63r8aIIhVnkMartgMMhmStfUYwNyQYQ",
+    authDomain: "gradibus-f20a6.firebaseapp.com",
+    databaseURL: "https://gradibus-f20a6.firebaseio.com",
+    projectId: "gradibus-f20a6",
+    storageBucket: "gradibus-f20a6.appspot.com",
+    messagingSenderId: "805999349197"
+  };
+    firebase.initializeApp(config);
+  </script>
+>>>>>>> 18723459571093cae23f2a5195e6205152de7493
+
+</head>
 <body>
 
+  <!-- MODALES -->
+  <!-- INICIAR SECION -->
+  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- dentro del modal -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="panel panel-login">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-6">
+                <a href="#" class="active" id="login-form-link">Login</a>
+              </div>
+              <div class="col-xs-6">
+                <a href="#" id="register-form-link">Register</a>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                  <div class="form-group">
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group text-center">
+                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                    <label for="remember"> Remember Me</label>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="text-center">
+                          <a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
+
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                  </div>
+
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div> <!-- fin modal iniciar secion -->
+
+  <!-- modales para cines -->
+  <!-- modal cine 1 -->
+  <div class="modal fade" id="biografo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <h4 class="modal-title modal-title-cinemas" id="myModalLabel">Cine Arte El Biógrafo</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- contenido con info del cine -->
+        <div class="movie-card">
+          <div class="container">
+            <!-- mapa -->
+            <a href=""><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.424933058628!2d-70.64248674647605!3d-33.43823404431558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c599482afe51%3A0x995c385d969e5069!2sJos%C3%A9+Victorino+Lastarria+181%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1515589255631" frameborder="0" style="border:10" allowfullscreen></iframe></a>
+            
+            <!-- primera columna -->
+            <div class="about-movie">
+              <!-- <div class="row"> -->
+              <div class="colum-one">
+
+                <!-- clasificacion de estrellas -->
+                <fieldset class="starRating">
+                  <input id="rating1" type="radio" data-length="1" name="rating" value="1">
+                  <label for="rating1"></label>
+                                  
+                  <input id="rating2" data-length="2" type="radio" name="rating" value="2" checked>
+                  <label for="rating2"></label>
+                              
+                  <input id="rating3" type="radio" data-length="3" name="rating" value="3">
+                  <label for="rating3"></label>
+                             
+                  <input id="rating4" data-length="4" type="radio" name="rating" value="4">
+                  <label for="rating4"></label>
+                                
+                  <input id="rating5" data-length="5" type="radio" name="rating" value="5">
+                  <label for="rating5"></label>
+                </fieldset>
+                  <span class="likes">250 likes</span>
+              </div><!--end colum-one -->
+     
+              <!-- segunda columna -->
+              <div class="column-second" id="sec"> <!-- column-second -->
+                <p>Dirección:</p> 
+                <p>José Victorino Lastarria 181, Santiago, Metropolitana</p>
+                <p>Teléfono: (2) 2664 8821</p>
+                <p>horario: 13:00 - 23:30</p>
+                <a href="http://www.elbiografo.cl/wordpress/" target="_blank">Ir al sitio.</a>
+              </div>
+            </div>
+          <!--end -about-movie -->
+          </div>
+        <!--end container -->
+        </div><!--end movie-card-->
+
+      </div> <!-- fin modal content -->
+    </div> <!-- fin modal dialog -->
+  </div> <!-- fin modal cine 1 -->
+
+   <!-- modal cine 2 -->
+  <div class="modal fade" id="normandie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <h4 class="modal-title modal-title-cinemas" id="myModalLabel">Cine Arte Normandie</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- contenido con info del cine -->
+        <div class="movie-card">
+          <div class="container">
+            <!-- mapa -->
+            <a href=""><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.069815079059!2d-70.65410258480075!3d-33.44748758077482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5098cc5c8bf%3A0xe70c5f4648436e81!2sTarapac%C3%A1+1181%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1515613734985" frameborder="0" style="border:0" allowfullscreen></iframe></a>
+            
+            <!-- primera columna -->
+            <div class="about-movie">
+              <!-- <div class="row"> -->
+              <div class="colum-one">
+
+                <!-- clasificacion de estrellas -->
+                <fieldset class="starRating_2">
+                  <input id="rating1" type="radio" data-length="1" name="rating" value="1">
+                  <label for="rating1"></label>
+                                  
+                  <input id="rating2" data-length="2" type="radio" name="rating" value="2" checked>
+                  <label for="rating2"></label>
+                              
+                  <input id="rating3" type="radio" data-length="3" name="rating" value="3">
+                  <label for="rating3"></label>
+                             
+                  <input id="rating4" data-length="4" type="radio" name="rating" value="4">
+                  <label for="rating4"></label>
+                                
+                  <input id="rating5" data-length="5" type="radio" name="rating" value="5">
+                  <label for="rating5"></label>
+                </fieldset>
+                  <span class="likes">200 likes</span>
+              </div><!--end colum-one -->
+     
+              <!-- segunda columna -->
+              <div class="column-second" id="sec"> <!-- column-second -->
+                <p>Dirección:</p> 
+                <p>Tarapacá 1181, Santiago, Región Metropolitana</p>
+                <p>Teléfono: (2) 2697 2979</p>
+                <p>horario: 12:00 - 21:30</p>
+                <a href="http://centroartealameda.cl/" target="_blank">Ir al sitio.</a>
+              </div>
+            </div>
+          <!--end -about-movie -->
+          </div>
+        <!--end container -->
+        </div><!--end movie-card-->
+
+      </div> <!-- fin modal content -->
+    </div> <!-- fin modal dialog -->
+  </div> <!-- fin modal cine 2 -->
+
+   <!-- modal cine 3 -->
+  <div class="modal fade" id="alameda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <h4 class="modal-title modal-title-cinemas" id="myModalLabel">Cine Arte Alameda</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- contenido con info del cine -->
+        <div class="movie-card">
+          <div class="container">
+            <!-- mapa -->
+            <a href=""><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d53264.91800996761!2d-70.70707416437777!3d-33.44781168262838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv+Libertador+Bernardo+O&#39;Higgins+117%2C+Santiago%2C+Santiago+Metropolitan!5e0!3m2!1ses!2scl!4v1515614207029" frameborder="0" style="border:0" allowfullscreen></iframe></a>
+            
+            <!-- primera columna -->
+            <div class="about-movie">
+              <!-- <div class="row"> -->
+              <div class="colum-one">
+
+                <!-- clasificacion de estrellas -->
+                <fieldset class="starRating">
+                  <input id="rating1" type="radio" data-length="1" name="rating" value="1">
+                  <label for="rating1"></label>
+                                  
+                  <input id="rating2" data-length="2" type="radio" name="rating" value="2" checked>
+                  <label for="rating2"></label>
+                              
+                  <input id="rating3" type="radio" data-length="3" name="rating" value="3">
+                  <label for="rating3"></label>
+                             
+                  <input id="rating4" data-length="4" type="radio" name="rating" value="4">
+                  <label for="rating4"></label>
+                                
+                  <input id="rating5" data-length="5" type="radio" name="rating" value="5">
+                  <label for="rating5"></label>
+                </fieldset>
+                  <span class="likes">200 likes</span>
+              </div><!--end colum-one -->
+     
+              <!-- segunda columna -->
+              <div class="column-second" id="sec"> <!-- column-second -->
+                <p>Dirección:</p> 
+                <p>Av Libertador Bernardo O'Higgins, Santiago, Metropolitan</p>
+                <p>Teléfono: (2) 2664 8821</p>
+                <p>horario: 12:00 - 23:00</p>
+                <a href="http://normandie.cl/" target="_blank">Ir al sitio.</a>
+              </div>
+            </div>
+          <!--end -about-movie -->
+          </div>
+        <!--end container -->
+        </div><!--end movie-card-->
+
+      </div> <!-- fin modal content -->
+    </div> <!-- fin modal dialog -->
+  </div> <!-- fin modal cine 3 -->
+
+<!-- fin modales de cines  -->
+
+  <!-- seccion del la barra de navegacion  -->
+  <section>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+    <!-- encabezado del menu -->
+        <div class="navbar-header">
+          <!-- menu tipo hamburguesa cuando se vea en dispositivos pequenos -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <!-- sr-only = se mostrara la navegacion solo en dispositivos de lectura, menu tipo hamburguesa-->
+            <span class="sr-only">Navegacion</span>
+            <!-- estas son las lineas del menu -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- logo -->
+          <img src="assets/img/logo.png" alt="Logo" class="logo-nav">
+
+        </div> <!-- fin navbar header -->
+        
+        <!-- elementos del menu -->
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
+          <!-- formulario de busqueda -->
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar por título, año, director, país...">
+            </div>
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#film">Películas</a></li>
+              <li><a href="#cinemas">Salas de Cine</a></li>
+              <li><a href="#events">Eventos</a></li>
+            </ul>
+          </form>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-toggle="modal" data-target="#miModal" href="#">Iniciar Secion</a></li>
+          </ul>
+        </div> <!-- fin elementos menu -->
+      </div>  <!-- fin container fluid -->
+    </nav>   
+  </section>
+  
+  <!-- seccion presentacion pag -->
+  <section class=" container-fluid presentation">
+    <div class="user-box">
+      <h1>7mo Arte</h1>
+      <div class="row">
+        <div class="desc">
+          <cite>" 7mo Arte es un espacio donde podras encontrar informacion sobre lugares emblematicos que proyectan cine arte, de esta forma esperamos acercar al público curioso de conocer un cine de calidad; y facilitar a los fanaticos los distintos horarios de estas artes audiovisuales. "</cite>
+        </div> <!-- fin col -->
+      </div> <!-- fin fila --> 
+  </section>
+  <!-- fin seccion de presentacion -->
+
+  <!-- seccion tendecia peliculas -->
+  <section>
+    <div class="container-fluid film" id="film"> <!-- tendency -->
+      <div class="row">      
+        <h2 class="title-ten">TENDENCIAS</h2>
+        <select class="menu-ten">
+          <option>Peliculas</option>
+          <option>Thriller</option>
+          <option>Terror</option>
+          <option>Documentales</option>
+          <option>Ciencia ficción</option>
+        </select>
+      </div>
+      <!-- Fin Filtro desplegable -->
+      
+       <!-- Carrusel -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="carousel carousel-showsixmoveone slide" id="carousel123">
+                      <div class="carousel-inner">
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs-12 col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item active">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                        </div>
+                      </div>
+                      <a class="left carousel-control" href="#carousel123" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                      <a class="right carousel-control" href="#carousel123" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Carrusel -->                     
+    </div> <!-- fin container fluid -->    
+  </section> <!-- fin seccion de tendencias -->
+  
+
+
+  <!-- seccion de cines artes -->
+  <section>
+    <div class="container-fluid cinemas" id="cinemas">
+      <!-- tittulo -->
+      <div class="row">
+        <div class="col-xs-offset-3 col-1-md col-md-offset-5">
+          <h2 class="title-cinemas">CINES</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- thumbnail 1 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+           <img class="small-cinema"  data-toggle="modal" data-target="#biografo" src="assets/img/cines/biografo.jpg" alt="biografo" style="height: 200px; width: 110%; display: block;">
+            <div class="caption">
+              <h3 class="title-small-cinema">El Biógrafo</h3>
+            </div>
+          </div>
+        </div>
+        
+        <!-- thumbnail 2 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img class="small-cinema" data-toggle="modal" data-target="#normandie" src="assets/img/cines/normandie.jpg" alt="normandie" style="height: 200px; width: 110%; display: block;">
+            <div class="caption">
+              <h3 class="title-small-cinema">Normandie</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- thumbnail 3 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img class="small-cinema" data-toggle="modal" data-target="#alameda" src="assets/img/cines/alameda.jpg" alt="alameda" style="height: 200px; width: 110%; display: block;">
+            <div class="caption">
+              <h3 class="title-small-cinema">Alameda</h3>
+            </div>
+          </div>
+        </div>
+
+      
+    </div> <!-- fin container fluid -->
+  </section>
+  
+  <!-- seccion con proximos eventos en los cines arte -->
+  <section>
+      <!-- Próximos eventos -->
+    <div id="events" class="container-fluid events" id="events">
+      <!-- Filtro desplegable -->
+      <div class="container-fluid film">
+        <div class="row">
+          <h2 class="title-ten">EVENTOS</h2>
+          <!-- <select class="menu-film">
+            <option>Proximos Eventos</option>
+            <option>Eventos</option>
+          </select> -->
+        </div>
+        <!-- Fin Filtro desplegable -->
+      <div class="bs-example" data-example-id="thumbnails-with-custom-content">
+      <div class="row">
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="assets/img/eventos/chacha.jpg" data-holder-rendered="true">
+            <div class="caption">
+              <h3>Latin Mambo</h3>
+              <p>Este domingo 14 de enero se realizará en cine arte Alameda "Clase Maestra de Burlesque y Performance". La clase está orientada a bailarines y actores que deseen perfeccionar sus performance y técnica de movimiento en tacos, e incursionar en el área del teatro de Variedades y Burlesque.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="assets/img/eventos/bonbon.jpg" data-holder-rendered="true">
+            <div class="caption">
+              <h3>Royal Deluxe: Los Bombón.</h3>
+              <p>Este jueves 11 vuelve a El Living - Centro Arte Alameda la banda del compositor de la compañía de teatro callejera Royal Deluxe: Los Bombón. El ritmo de sus canciones que mezclan rock and roll con folclor latino se tomarán nuestro espacio para hacernos bailar</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="assets/img/eventos/veganos.jpg" data-holder-rendered="true">
+            <div class="caption">
+              <h3>Feria Vegourmet</h3>
+              <p>Ven a disfrutar junto a nosotros lo mejor de la gastronomía y el mundo vegano, todo en un solo lugar. Sábado 06 de Enero, Centro arte Alameda. Desde las 13.00 hrs. Entrada Liberada</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="assets/img/eventos/sonora.jpg" data-holder-rendered="true">
+            <div class="caption">
+              <h3>Sonora de Llegar</h3>
+              <p>El proximo viernes 15 de febrero celebramos el regreso de Sonora de Llegar a los escenarios de la capital luego de su exitoso paso por Mexico con un explosivo y energetico show larga duracion donde se repasaran todos los clasicos de la banda y tambien primicias del proximo disco que esta por salir.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    </div>
+
+  <!-- Fin Próximos eventos -->
+  </section>
+
+  <!-- seccion footer -->
+  <footer>
+    7°Arte <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2018
+  </footer>
+
+
+
 <!-- filtro de pelis -->
+<!--  
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-6 col-md-6">
@@ -24,17 +592,16 @@
       </div>
     </div>
   </div>
-
+-->
 
 
   <!-- Scripts -->
-  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  -->
   <script src="assets/js/jquery-3.2.1.min.js" type="application/javascript"></script>
   <script src="assets/js/app.js" type="application/javascript"></script>
   <script src="assets/js/bootstrap.min.js" type="application/javascript"></script>
 </body>
 
 </html>
+
+
+

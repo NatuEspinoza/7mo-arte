@@ -34,13 +34,14 @@ $(document).ready(function() {
 
       console.log([title, imdbID, poster]);
 
-      var liMovie = $('<li class="list-group-item"></li>');
-      var posterImg = $('<img src="' + poster + '" width="50px"/>');
+      var liMovie = $('<li class="list-group-item id="lista"></li>');
+      var posterImg = $('<img src="' + poster + '" width="70px"/>');
       liMovie.append(posterImg);
       liMovie.append(title);
       resultsUl.append(liMovie);
       liMovie.click(function renderDetails(){
         console.log('render');
+        /* aqui debiese ir a otra pagina para ver el thriller */
       });
     }
 
@@ -48,9 +49,59 @@ $(document).ready(function() {
   function renderError (error){
     console.log(error);
   }
+<<<<<<< HEAD
 });
+=======
+
+
+/*funcion cambio de login a registro*/
+
+  $('#login-form-link').click(function(e) {
+    $("#login-form").delay(100).fadeIn(100);
+    $("#register-form").fadeOut(100);
+    $('#register-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+
+  $('#register-form-link').click(function(e) {
+    $("#register-form").delay(100).fadeIn(100);
+    $("#login-form").fadeOut(100);
+    $('#login-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+
 
 /**
+
+
+});
+
+*/
+
+var login = document.getElementById('login-submit');
+login.addEventListener('click', function(){
+  /*
+  *console.log('diste un click');
+  */
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  firebase.auth().signInWithEmailAndPassword(username, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+  });
+  console.log(username);
+  console.log(pasword);
+});
+
+>>>>>>> 18723459571093cae23f2a5195e6205152de7493
+
+/*
+
  * Función para Carrusel
  */
  (function(){
@@ -74,9 +125,54 @@ $(document).ready(function() {
      }
    });
  }());
- /**
+ /*
   * Fin de Función para Carrusel
   */
+
+/*
+  $.ajax({
+    type: "GET",
+    url: "http://www.omdbapi.com/?apikey=3a181f1c&s=type",
+    dataType: "xml",
+    success: function(data) {
+
+        console.log(data);
+
+*/
+/*
+      $("ul").children().remove();
+        $(data).find("MenuCompleto").each( function() {
+          var info = '<li>Fecha: ' + $(this).find("FechaString").text() + '</li>';
+            $("ul").append(info);
+        });
+    }
+  });
+*/
+
+
+
+/*
+  $.ajax({
+    type: "GET",
+    url: "http://www.omdbapi.com/?apikey=3a181f1c&s=type",
+    dataType: "xml",
+    success: function(data) {
+
+        console.log(data);
+
+*/
+/*
+      $("ul").children().remove();
+        $(data).find("MenuCompleto").each( function() {
+          var info = '<li>Fecha: ' + $(this).find("FechaString").text() + '</li>';
+            $("ul").append(info);
+        });
+    }
+  });
+*/
+
+
+
 
 
 /*
