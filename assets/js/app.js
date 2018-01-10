@@ -45,7 +45,7 @@ $(document).ready(function() {
    });
  }());
  /**
-  * Fin Función para Carrusel
+  * Fin de Función para Carrusel
   */
 
 });
