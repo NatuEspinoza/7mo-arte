@@ -23,6 +23,11 @@ h1 {
   height: auto;
 }
 
+#lista {
+  display: inline-block;
+	float: left;
+
+}
 /*Fin Nav Bar */
 
 /* Section Profile */
