@@ -30,6 +30,7 @@ h1 {
 	background-position: bottom;
   height: 30em;
   color: #FFF;
+  margin-top: 50px;
 }
 
 .user-box {
@@ -52,7 +53,7 @@ h1 {
 }
 
 .menu-film {
-	margin: 2em;
+	margin-top: 3em;
   font-size: 2em;
   background: #0f1626;
   color: #FFF;
@@ -171,6 +172,7 @@ h2 {
 	height: 30em;
 }
 .title-cinema {
+  margin-top: 2em;
 	text-align: center;
 }
 /* Fin Salas de Cine */

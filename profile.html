@@ -12,7 +12,7 @@
 
 <body>
   <!-- Barra de navegación -->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -32,6 +32,11 @@
             <input type="text" class="form-control" placeholder="Busca por título, año, director, país...">
           </div>
           <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#movies">Películas</a></li>
+            <li><a href="#cinema">Salas de Cine</a></li>
+            <li><a href="#events">Eventos</a></li>
+          </ul>
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
@@ -60,7 +65,7 @@
 
   <!-- Sección de Películas -->
   <!-- Filtro desplegable -->
-  <div class="container-fluid film">
+  <div id="movies" class="container-fluid film">
     <div class="row">
       <select class="menu-film">
         <option>Selección para ti</option>
@@ -154,7 +159,7 @@
   <!-- Fin Sección de Películas -->
 
   <!-- Sección de Salas de Cines -->
-  <div class="container-fluid cinema">
+  <div id="cinema" class="container-fluid cinema">
     <div class="row">
       <h1 class="title-cinema">Salas de Cine</h1>
     </div>
@@ -162,7 +167,7 @@
   <!-- Fin Sección de Salas de Cines -->
 
   <!-- Próximos eventos -->
-  <div class="container-fluid events">
+  <div id="events" class="container-fluid events">
     <!-- Filtro desplegable -->
     <div class="container-fluid film">
       <div class="row">
