@@ -4,7 +4,7 @@ $(document).ready(function() {
     url: "http://www.omdbapi.com/?apikey=3a181f1c&s=type",
     dataType: "xml",
     success: function(data) {
-    
+
         console.log(data);
 
 
@@ -18,3 +18,34 @@ $(document).ready(function() {
   });
 */
 };
+});
+
+/**
+ * Función para Carrusel
+ */
+ (function(){
+   $('#carousel123').carousel({ interval: 2000 });
+
+   $('.carousel-showsixmoveone .item').each(function(){
+     var itemToClone = $(this);
+
+     for (var i=1;i<6;i++) {
+       itemToClone = itemToClone.next();
+
+       // wrap around if at end of item collection
+       if (!itemToClone.length) {
+         itemToClone = $(this).siblings(':first');
+       }
+
+       // grab item, clone, add marker class, add to collection
+       itemToClone.children(':first-child').clone()
+         .addClass("cloneditem-"+(i))
+         .appendTo($(this));
+     }
+   });
+ }());
+ /**
+  * Fin Función para Carrusel
+  */
+
+});
