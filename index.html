@@ -1,19 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es"> <!-- espanol -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
   <title>7mo Arte</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  
+  <link rel="stylesheet" href="assets/css/style.css">  
 </head>
-
 <body>
-  
-  <section></section>
 
+  <!-- MODALES -->
+  <!-- INICIAR SECION -->
+  <!-- esto es para iniciar -->
+  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- dentro del modal -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="panel panel-login">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-6">
+                <a href="#" class="active" id="login-form-link">Login</a>
+              </div>
+              <div class="col-xs-6">
+                <a href="#" id="register-form-link">Register</a>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                  <div class="form-group">
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group text-center">
+                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                    <label for="remember"> Remember Me</label>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="text-center">
+                          <a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
+                  <div class="form-group">
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- seccion del la barra de navegacion  -->
+  <section>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+    <!-- encabezado del menu -->
+        <div class="navbar-header">
+          <!-- menu tipo hamburguesa cuando se vea en dispositivos pequenos -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <!-- sr-only = se mostrara la navegacion solo en dispositivos de lectura, menu tipo hamburguesa-->
+            <span class="sr-only">Navegacion</span>
+            <!-- estas son las lineas del menu -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- logo -->
+          <img src="assets/img/logo.png" alt="Logo" class="logo-nav">
+
+        </div> <!-- fin navbar header -->
+        
+        <!-- elementos del menu -->
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
+          <!-- formulario de busqueda -->
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar por título, año, director, país...">
+            </div>
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </form>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-toggle="modal" data-target="#miModal" href="#">Iniciar Secion</a></li>
+          </ul>
+        </div> <!-- fin elementos menu -->
+      </div>  <!-- fin container fluid -->
+    </nav>   
+  </section>
+  
+  <!-- seccion presentacion pag -->
+  <section class=" container-fluid presentation">
+    <div class="user-box">
+      <h1>7mo Arte</h1>
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-4 col-md-3">
+          <p class="summary">Pag del 7mo</p>
+        </div> <!-- fin col -->
+      </div> <!-- fin fila --> 
+  </section>
+  <!-- fin seccion de presentacion -->
+
+  <!-- seccion tendecia peliculas -->
+  <section>
+    <div class="container-fluid film"> <!-- tendency -->
+      <div class="row">
+        <select class="menu-film">
+          <option>Peliculas</option>
+          <option>Thriller</option>
+          <option>Terror</option>
+          <option>Documentales</option>
+          <option>Ciencia ficción</option>
+        </select>
+      </div>
+      <!-- Fin Filtro desplegable -->
+      
+       <!-- Carrusel -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="carousel carousel-showsixmoveone slide" id="carousel123">
+                      <div class="carousel-inner">
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs-12 col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item active">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=6" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                          <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://placehold.it/500/40a1ff/002040&amp;text=8" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=1" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://placehold.it/500/002d5a/fff/&amp;text=2" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://placehold.it/500/d6d6d6/333&amp;text=3" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://placehold.it/500/002040/eeeeee&amp;text=4" class="img-responsive"></a></div>
+                          <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://placehold.it/500/0054A6/fff/&amp;text=5" class="img-responsive"></a></div>
+                        </div>
+                      </div>
+                      <a class="left carousel-control" href="#carousel123" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                      <a class="right carousel-control" href="#carousel123" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Carrusel -->                     
+    </div> <!-- fin container fluid -->    
+  </section> <!-- fin seccion de tendencias -->
+  
+
+
+  <!-- seccion de cines artes -->
+  <section>
+    <div class="container-fluid cinemas">
+      <!-- tittulo -->
+      <div class="row">
+        <div class="col-xs-offset-3 col-1-md col-md-offset-5">
+          <h2 class="title-cinemas">CINES</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- thumbnail 1 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="#"><img class="small-cinema" src="assets/img/cines/biografo.jpg" alt="biografo"></a>
+            <div class="caption">
+              <h3 class="title-small-cinema">El Biógrafo</h3>
+            </div>
+          </div>
+        </div>
+        
+        <!-- thumbnail 2 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="#"><img class="small-cinema" src="assets/img/cines/normandie.jpg" alt="normandie"></a>
+            <div class="caption">
+              <h3 class="title-small-cinema">Normandie</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- thumbnail 3 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="#"><img class="small-cinema" src="assets/img/cines/alameda.jpg" alt="alameda"></a>
+            <div class="caption">
+              <h3 class="title-small-cinema">Alameda</h3>
+            </div>
+          </div>
+        </div>
+
+      
+    </div> <!-- fin container fluid -->
+  </section>
+  
+  <!-- seccion con proximos eventos en los cines arte -->
+  <section>
+      <!-- Próximos eventos -->
+  <div id="events" class="container-fluid events">
+    <!-- Filtro desplegable -->
+    <div class="container-fluid film">
+      <div class="row">
+        <select class="menu-film">
+          <option>Proximos Eventos</option>
+          <option>Eventos</option>
+        </select>
+      </div>
+      <!-- Fin Filtro desplegable -->
+    <div class="bs-example" data-example-id="thumbnails-with-custom-content">
+    <div class="row">
+      <div class="col-sm-3 col-md-3">
+        <div class="thumbnail">
+          <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMyMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGQzOTFlYmQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZDM5MWViZCI+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTguNDc2NTYyNSIgeT0iMTA3LjIiPjMyMHgyMDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-3">
+        <div class="thumbnail">
+          <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMyMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGQzOTJjMGMgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZDM5MmMwYyI+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTguNDc2NTYyNSIgeT0iMTA3LjIiPjMyMHgyMDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-3">
+        <div class="thumbnail">
+          <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMyMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGQzOGQ2MDAgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZDM4ZDYwMCI+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTguNDc2NTYyNSIgeT0iMTA3LjIiPjMyMHgyMDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-3">
+        <div class="thumbnail">
+          <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMyMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGQzOGQ2MDAgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZDM4ZDYwMCI+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTguNDc2NTYyNSIgeT0iMTA3LjIiPjMyMHgyMDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  </div>
+
+  <!-- Fin Próximos eventos -->
+    
+
+  </section>
+
+  <!-- seccion footer -->
+  <footer>
+    7°Arte <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2018
+  </footer>
+
+  <!-- modal con login y registro -->
+
+
+  <!-- modal de los cines -->
+ 
 
   <!-- Scripts -->
 
@@ -25,3 +378,6 @@
 </body>
 
 </html>
+
+
+

@@ -17,6 +17,7 @@ $(document).ready(function() {
     }
   });
 */
+<<<<<<< Updated upstream
 };
 });
 
@@ -49,3 +50,10 @@ $(document).ready(function() {
   */
 
 });
+=======
+
+};
+
+
+
+>>>>>>> Stashed changes
