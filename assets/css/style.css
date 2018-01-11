@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,16 @@
 }
 
 h1 {
-  color: #FF533D;
+  color: #0f1626;
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn-primary {
+  background: #FF533D;
+}
+
+.btn-primary:hover {
+  background: #0f1626;
 }
 
 /* Nav Bar */
@@ -25,18 +33,18 @@ h1 {
 
 #lista {
   display: inline-block;
-	float: left;
-
+  float: left;
 }
+
 /*Fin Nav Bar */
 
 /* Section Profile */
 
 .profile {
-  background-image: url(../img/back.jpg);
-	background-repeat: none;
-	background-size: cover;
-	background-position: bottom;
+  background-image: url(../img/gif.gif);
+  background-repeat: none;
+  background-size: cover;
+  background-position: bottom;
   height: 30em;
   color: #FFF;
   margin-top: 50px;
@@ -58,21 +66,25 @@ h1 {
 
 .film {
   background: #FF533D;
-	text-align: center;
+  text-align: center;
 }
 
 .menu-film {
-	margin-top: 3em;
+  margin-top: 3em;
   font-size: 2em;
   background: #0f1626;
   color: #FFF;
+  border-radius: 0.2em;
+  border-color: #0f1626;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Carrusel */
 
 .carousel {
-	margin: 2em
+  margin: 2em
 }
+
 .carousel-showsixmoveone {
   .carousel-control {
     width: 4%;
@@ -153,6 +165,7 @@ h1 {
 
 h2 {
   margin: 2em 0 1em;
+  font-family: 'Oswald', sans-serif;
 }
 
 .logo {
@@ -177,81 +190,102 @@ h2 {
 /* Fin Sección de Películas */
 
 /* Salas de Cine */
+
 .cinema {
-	height: 30em;
+  height: 30em;
 }
+
 .title-cinema {
   margin-top: 2em;
-	text-align: center;
+  text-align: center;
 }
+
 /* Fin Salas de Cine */
 
 /* Sección de eventos */
+
 .events {
-	background: #FF533D;
+  background: #FF533D;
 }
 
 .thumbnail {
-	margin-top: 3em;
+  margin-top: 3em;
+  background: #e6e6e6;
+  text-align: left;
+}
+
+.menu-events {
+  margin-top: 2.5em;
+  font-size: 2em;
+  background: #0f1626;
+  color: #FFF;
+  border-radius: 0.2em;
+  border-color: #0f1626;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Calendario Eventos */
+
 table {
-		margin-top: 3em;
-    background-color: #FFF;
-    width: 100%;
+  margin-top: 3em;
+  background-color: #FFF;
+  width: 100%;
+  margin-bottom: 3em;
 }
+
 /* Fin Calendario Eventos */
+
 /* Fin Sección de eventos */
 
+/*------------------------------------*/
+
+/*         SECCION PRESENTATION       */
 
 /*------------------------------------*/
-/*         SECCION PRESENTATION       */
-/*------------------------------------*/
-.presentation 
-{
+
+.presentation {
   background-image: url(../img/back.jpg);
   background-repeat: none;
   background-size: cover;
   background-position: bottom;
   height: 30em;
-/*  color: #FFF;*/
+  /*  color: #FFF;*/
   margin-top: 4em;
 }
 
-.summary
-{
+.summary {
   color: #0f1626;
   font-size: 2em;
   text-align: center;
 }
 
-.desc
-{
+.desc {
   color: ;
   font-size: 1.5em;
   padding: 3em 5em;
 }
 
 /*------------------------------------*/
+
 /*         SECCION TENDENCIAS         */
+
 /*------------------------------------*/
+
 /*Estilo seccion tendencias*/
-.tendency
-{
-	background-color: #FF533D;
-	padding: 3em 6em;
+
+.tendency {
+  background-color: #FF533D;
+  padding: 3em 6em;
 }
 
 /*Estilo titulo tendencias*/
-.title-ten
-{
-	color: #F0EAD6;
-/*	margin-bottom: 1.5em;*/
+
+.title-ten {
+  color: #F0EAD6;
+  /*	margin-bottom: 1.5em;*/
 }
 
-.menu-ten 
-{
+.menu-ten {
   margin-top: 1em;
   font-size: 2em;
   background: #0f1626;
@@ -259,72 +293,57 @@ table {
 }
 
 /*Estilo seccion cines*/
-.cinemas
-{
-	background-color: #F0EAD6;
-	padding: 3em;
+
+.cinemas {
+  background-color: #F0EAD6;
+  padding: 3em;
 }
 
+/*------------------------------------*/
+
+/*            SECCION CINES           */
 
 /*------------------------------------*/
-/*            SECCION CINES           */
-/*------------------------------------*/
+
 /*Estilo titulo cines*/
-.title-cinemas
-{
-	color: #FF533D;
-	margin-bottom: 1.5em;
-	margin-left: 1.5em;
+
+.title-cinemas {
+  color: #FF533D;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
 }
 
 /*Estilos nombre de los cines*/
-.title-small-cinema
-{
-	color: #FF533D;
-	text-align: center;
+
+.title-small-cinema {
+  color: #FF533D;
+  text-align: center;
 }
 
-
-/*-------------------------------------*/
-/*                FOOTER               */
-/*-------------------------------------*/
-/*-----Estilo footer-----*/
-footer
-{
-	background-color: #0f1626;
-	color: #FF533D;
-	height: 5.5em;
-	padding-top: 2em;
-	width: 100%;
-	text-align: center;
-} 
-
-
-
 /*-----------------------------------*/
+
 /*      ESTILO CARS DE LOS CINES     */
+
 /*-----------------------------------*/
 
-.modal-title-cinemas
-{
+.modal-title-cinemas {
   text-align: center;
 }
 
 /*estilo mapa*/
-.map
-{
-/*  position: relative;*/
+
+.map {
+  /*  position: relative;*/
   width: 400px;
-  height: 200px; 
-  margin-top: 0.3em; 
-/*  margin-left: 1em;*/
+  height: 200px;
+  margin-top: 0.3em;
+  /*  margin-left: 1em;*/
   margin-bottom: 0.8em;
   text-align: center;
-/*  border: 2px solid #FF533D;*/
+  /*  border: 2px solid #FF533D;*/
   border-radius: 0.7em;
- /* z-index: 1;*/
+  /* z-index: 1;*/
 }
-
 
 @media (max-width: 768px) {
   .container {
@@ -332,7 +351,6 @@ footer
     height: 450px !important;
     overflow: hidden;
   }
-
 }
 
 .movie-card {
@@ -343,7 +361,7 @@ footer
 }
 
 .movie-card .container {
-/*  margin: 0 auto;*/
+  /*  margin: 0 auto;*/
   width: 500px;
   height: 450px;
   background: #F0F0ED;
@@ -351,12 +369,12 @@ footer
   text-align: center;
 }
 
-.sec
-{
+.sec {
   text-align: left;
 }
 
 /*Estilo titulo del cine en el modal*/
+
 .movie-card .container .details .title1 {
   color: #000;
   font-size: 24px;
@@ -367,6 +385,7 @@ footer
 }
 
 /*Estilo corazon del like*/
+
 .movie-card .container .likes:before {
   content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
   position: relative;
@@ -375,6 +394,7 @@ footer
 }
 
 /*Estilo parrafos con direccion tel y horario*/
+
 .movie-card .container .about-movie {
   display: inline-flex;
   bottom: 0px;
@@ -385,6 +405,7 @@ footer
 }
 
 /*estilo columna 1*/
+
 .movie-card .container .about-movie .colum-one {
   padding-left: 50px;
   padding-top: 5px;
@@ -394,6 +415,7 @@ footer
 }
 
 /*estilo segunda columna*/
+
 .movie-card .container .about-movie .colum-second {
   padding-left: 50px;
   padding-top: 20px;
@@ -403,6 +425,7 @@ footer
 }
 
 /*start rate system style */
+
 fieldset {
   border-color: #fff;
   border-style: none;
@@ -412,26 +435,29 @@ fieldset {
   margin-left: -22px;
 }
 
-.starRating > * {
+.starRating>* {
   float: left;
 }
 
-/* 
-some  animtion   do  when  load window 
+/*
+ some  animtion   do  when  load window
 
-*/
+ */
+
 @-webkit-keyframes pulse {
   50% {
     color: #5e5e5e;
     text-shadow: 0 0 15px #777777;
   }
 }
+
 @keyframes pulse {
   50% {
     color: #5e5e5e;
     text-shadow: 0 0 15px #777777;
   }
 }
+
 .starRating label {
   height: 40px;
   width: 15%;
@@ -489,31 +515,33 @@ some  animtion   do  when  load window
   display: none;
 }
 
-
-.starRating input:checked + label:after,
-.starRating input:checked ~ label:after {
+.starRating input:checked+label:after, .starRating input:checked~label:after {
   content: "★";
   color: #F9BF3B;
   text-shadow: 0 0 20px #F9BF3B;
 }
 
+/*------------------------------------*/
+
+/*  ESTILO MODAL DE REGISTRO Y LOGIN  */
 
 /*------------------------------------*/
-/*  ESTILO MODAL DE REGISTRO Y LOGIN  */
-/*------------------------------------*/
+
 .panel-login {
   border-color: #ccc;
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
 }
+
 .panel-login>.panel-heading {
   color: #00415d;
   background-color: #fff;
   border-color: #fff;
-  text-align:center;
+  text-align: center;
 }
-.panel-login>.panel-heading a{
+
+.panel-login>.panel-heading a {
   text-decoration: none;
   color: #666;
   font-weight: bold;
@@ -522,22 +550,25 @@ some  animtion   do  when  load window
   -moz-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-.panel-login>.panel-heading a.active{
+
+.panel-login>.panel-heading a.active {
   color: #029f5b;
   font-size: 18px;
 }
-.panel-login>.panel-heading hr{
+
+.panel-login>.panel-heading hr {
   margin-top: 10px;
   margin-bottom: 0px;
   clear: both;
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
-  background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
-  background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
 }
-.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+
+.panel-login input[type="text"], .panel-login input[type="email"], .panel-login input[type="password"] {
   height: 45px;
   border: 1px solid #ddd;
   font-size: 16px;
@@ -545,14 +576,15 @@ some  animtion   do  when  load window
   -moz-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-.panel-login input:hover,
-.panel-login input:focus {
-  outline:none;
+
+.panel-login input:hover, .panel-login input:focus {
+  outline: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   border-color: #ccc;
 }
+
 .btn-login {
   background-color: #59B2E0;
   outline: none;
@@ -564,18 +596,19 @@ some  animtion   do  when  load window
   text-transform: uppercase;
   border-color: #59B2E6;
 }
-.btn-login:hover,
-.btn-login:focus {
+
+.btn-login:hover, .btn-login:focus {
   color: #fff;
   background-color: #53A3CD;
   border-color: #53A3CD;
 }
+
 .forgot-password {
   text-decoration: underline;
   color: #888;
 }
-.forgot-password:hover,
-.forgot-password:focus {
+
+.forgot-password:hover, .forgot-password:focus {
   text-decoration: underline;
   color: #666;
 }
@@ -591,10 +624,57 @@ some  animtion   do  when  load window
   text-transform: uppercase;
   border-color: #1CB94A;
 }
-.btn-register:hover,
-.btn-register:focus {
+
+.btn-register:hover, .btn-register:focus {
   color: #fff;
   background-color: #1CA347;
   border-color: #1CA347;
 }
 
+/* Footer */
+
+.footer {
+  background: #0f1626;
+  height: 5em;
+  padding: 1em;
+}
+
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/*
+     Multicoloured Hover Variations
+ */
+
+.center-block a {
+  color: #FF533D;
+}
+
+#social-fb:hover {
+  color: #3B5998;
+}
+
+#social-tw:hover {
+  color: #4099FF;
+}
+
+#social-gp:hover {
+  color: #d34836;
+}
+
+#social-em:hover {
+  color: #f39c12;
+}

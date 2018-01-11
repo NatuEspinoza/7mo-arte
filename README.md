@@ -17,13 +17,17 @@ Por qué  van a los cine artes:
 * Ambiente tranquilo
 * Tienen la posibilidad de asistir a otras actividades en el cine
 * Gusto por lo vintage, clásico, lo retro…
-*Películas de cine independiente o poco conocidas
+* Películas de cine independiente o poco conocidas
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 ## 3-Definición del usuario
 =======
 ## 3-Diseño
 >>>>>>> 18723459571093cae23f2a5195e6205152de7493
+=======
+## 3-Diseño
+>>>>>>> Stashed changes
 
 ![Diseño / Sketching](assets/img/INICIAL.jpg)
 ![Diseño / Sketching](assets/img/PERFIL.jpg)

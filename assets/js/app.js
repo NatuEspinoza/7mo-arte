@@ -4,8 +4,8 @@ $(document).ready(function() {
   /* llamo al id del input y lo guardo en una variable */
   var titleFilm = $('#title');
 
-/* creo el evento de click en el boton */
-  searchBtn.click(function searchMovie(){
+  /* creo el evento de click en el boton */
+  searchBtn.click(function searchMovie() {
     /* creo una variable que guardara los datos del input */
     var titleText = titleFilm.val();
     //alert('searchMovie ' + titleText);
@@ -20,7 +20,8 @@ $(document).ready(function() {
       error: renderError
     })
   })
-  function renderMovies (response){
+
+  function renderMovies(response) {
     //console.log(response);
     var movies = response.Search;
     var resultsUl = $('#results');
@@ -39,38 +40,36 @@ $(document).ready(function() {
       liMovie.append(posterImg);
       liMovie.append(title);
       resultsUl.append(liMovie);
-      liMovie.click(function renderDetails(){
+      liMovie.click(function renderDetails() {
         console.log('render');
         /* aqui debiese ir a otra pagina para ver el thriller */
       });
     }
 
   }
-  function renderError (error){
+
+  function renderError(error) {
     console.log(error);
   }
-<<<<<<< HEAD
 });
-=======
-
 
 /*funcion cambio de login a registro*/
 
-  $('#login-form-link').click(function(e) {
-    $("#login-form").delay(100).fadeIn(100);
-    $("#register-form").fadeOut(100);
-    $('#register-form-link').removeClass('active');
-    $(this).addClass('active');
-    e.preventDefault();
-  });
+$('#login-form-link').click(function(e) {
+  $("#login-form").delay(100).fadeIn(100);
+  $("#register-form").fadeOut(100);
+  $('#register-form-link').removeClass('active');
+  $(this).addClass('active');
+  e.preventDefault();
+});
 
-  $('#register-form-link').click(function(e) {
-    $("#register-form").delay(100).fadeIn(100);
-    $("#login-form").fadeOut(100);
-    $('#login-form-link').removeClass('active');
-    $(this).addClass('active');
-    e.preventDefault();
-  });
+$('#register-form-link').click(function(e) {
+  $("#register-form").delay(100).fadeIn(100);
+  $("#login-form").fadeOut(100);
+  $('#login-form-link').removeClass('active');
+  $(this).addClass('active');
+  e.preventDefault();
+});
 
 
 /**
@@ -81,53 +80,54 @@ $(document).ready(function() {
 */
 
 var login = document.getElementById('login-submit');
-login.addEventListener('click', function(){
+login.addEventListener('click', function() {
   /*
-  *console.log('diste un click');
-  */
+   *console.log('diste un click');
+   */
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
 
   firebase.auth().signInWithEmailAndPassword(username, password).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  // ...
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
   });
   console.log(username);
   console.log(pasword);
 });
 
->>>>>>> 18723459571093cae23f2a5195e6205152de7493
-
 /*
 
  * Función para Carrusel
  */
- (function(){
-   $('#carousel123').carousel({ interval: 2000 });
+(function() {
+  $('#carousel123').carousel({
+    interval: 2000
+  });
 
-   $('.carousel-showsixmoveone .item').each(function(){
-     var itemToClone = $(this);
+  $('.carousel-showsixmoveone .item').each(function() {
+    var itemToClone = $(this);
 
-     for (var i=1;i<6;i++) {
-       itemToClone = itemToClone.next();
+    for (var i = 1; i < 6; i++) {
+      itemToClone = itemToClone.next();
 
-       // wrap around if at end of item collection
-       if (!itemToClone.length) {
-         itemToClone = $(this).siblings(':first');
-       }
+      // wrap around if at end of item collection
+      if (!itemToClone.length) {
+        itemToClone = $(this).siblings(':first');
+      }
 
-       // grab item, clone, add marker class, add to collection
-       itemToClone.children(':first-child').clone()
-         .addClass("cloneditem-"+(i))
-         .appendTo($(this));
-     }
-   });
- }());
- /*
-  * Fin de Función para Carrusel
-  */
+      // grab item, clone, add marker class, add to collection
+      itemToClone.children(':first-child').clone()
+        .addClass("cloneditem-" + (i))
+        .appendTo($(this));
+    }
+  });
+});
+
+/*
+ * Fin de Función para Carrusel
+ */
 
 /*
   $.ajax({
