@@ -333,7 +333,7 @@ table {
   text-align: center;
 }
 
-.user-box {
+#page1 {
   background: rgba(249,231,159,0.63);
   background: -moz-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(249,231,159,0.63)), color-stop(94%, rgba(249,231,159,0.63)), color-stop(99%, rgba(249,231,159,0.63)), color-stop(100%, rgba(249,231,159,0.45)));
@@ -354,8 +354,9 @@ table {
   margin-top: -3%;
 }
 
-.desc cite{
+#text1 cite{
   font-family: 'Atma', cursive;
+  font-size: 20px;
 }
 
 /*------------------------------------*/
@@ -365,15 +366,16 @@ table {
 /*Estilo seccion tendencias*/
 
 .tendency {
-  background-color: #FF533D;
   padding: 3em 6em;
 }
 
 /*Estilo titulo tendencias*/
 
 .title-ten {
-  color: #F0EAD6;
-  /*	margin-bottom: 1.5em;*/
+  color: rgb(167, 28, 35)  ;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  font-weight: 600;
 }
 
 .menu-ten {
