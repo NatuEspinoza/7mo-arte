@@ -14,34 +14,31 @@
 
 <body>
   <!-- modales para cines -->
-  <!-- modal cine 1 -->
-  <div class="modal fade" id="biografo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-md" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-              <h4 class="modal-title modal-title-cinemas" id="myModalLabel">Cine Arte El Biógrafo</h4>
+    <!-- modal cine 1 -->
+    <div class="modal fade" id="biografo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <h4 class="modal-title modal-title-cinemas" id="myModalLabel">Cine Arte El Biógrafo</h4>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- contenido con info del cine -->
-        <div class="movie-card">
-          <div class="container">
-            <!-- mapa -->
-            <a href=""><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.424933058628!2d-70.64248674647605!3d-33.43823404431558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c599482afe51%3A0x995c385d969e5069!2sJos%C3%A9+Victorino+Lastarria+181%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1515589255631" frameborder="0" style="border:10" allowfullscreen></iframe></a>
+          <!-- contenido con info del cine -->
+          <div class="movie-card">
+            <div class="container">
+              <!-- mapa -->
+              <a href=""><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.424933058628!2d-70.64248674647605!3d-33.43823404431558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c599482afe51%3A0x995c385d969e5069!2sJos%C3%A9+Victorino+Lastarria+181%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1515589255631" frameborder="0" style="border:10" allowfullscreen></iframe></a>
 
-            <!-- primera columna -->
-            <div class="about-movie">
-              <!-- <div class="row"> -->
-              <div class="colum-one">
-
+              <!-- fila estrellas y like -->
+              <div class="row">
                 <!-- clasificacion de estrellas -->
-                <fieldset class="starRating">
+                <fieldset class="starRating ">
                   <input id="rating1" type="radio" data-length="1" name="rating" value="1">
                   <label for="rating1"></label>
 
@@ -57,61 +54,58 @@
                   <input id="rating5" data-length="5" type="radio" name="rating" value="5">
                   <label for="rating5"></label>
                 </fieldset>
-                <span class="likes">250 likes</span>
-              </div>
-              <!--end colum-one -->
 
-              <!-- segunda columna -->
-              <div class="column-second" id="sec">
-                <!-- column-second -->
-                <p>Dirección:</p>
-                <p>José Victorino Lastarria 181, Santiago, Metropolitana</p>
-                <p>Teléfono: (2) 2664 8821</p>
-                <p>horario: 13:00 - 23:30</p>
-                <a href="http://www.elbiografo.cl/wordpress/" target="_blank">Ir al sitio.</a>
-              </div>
+                <!--corazon y likes -->
+                <span class="glyphicon glyphicon-heart heart"></span><span class="likes">250 likes</span>
+
+              </div> <!-- fin fila -->
+
+              <div class="row">
+                <div class="col-md-12 info">
+                  <p>Dirección: José Victorino Lastarria 181, Santiago, Metropolitana</p>
+                  <p>Teléfono: (2) 2664 8821</p>
+                  <p>horario: 13:00 - 23:30</p>
+                  <a class="especialLink" href="http://www.elbiografo.cl/wordpress/" target="_blank">Ir al sitio.</a>
+                </div> <!-- fin col -->
+              </div> <!-- fin row -->
             </div>
-            <!--end -about-movie -->
-          </div>
-          <!--end container -->
-        </div>
-        <!--end movie-card-->
 
+            <!--end container -->
+          </div>
+          <!--end movie-card-->
+
+        </div>
+        <!-- fin modal content -->
       </div>
-      <!-- fin modal content -->
+      <!-- fin modal dialog -->
     </div>
-    <!-- fin modal dialog -->
-  </div>
-  <!-- fin modal cine 1 -->
+    <!-- fin modal cine 1 -->
 
-  <!-- modal cine 2 -->
-  <div class="modal fade" id="normandie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-md" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-              <h4 class="modal-title modal-title-cinemas" id="myModalLabel">Cine Arte Normandie</h4>
+    <!-- modal cine 2 -->
+    <div class="modal fade" id="normandie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <h4 class="modal-title modal-title-cinemas" id="myModalLabel">Cine Arte Normandie</h4>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- contenido con info del cine -->
-        <div class="movie-card">
-          <div class="container">
-            <!-- mapa -->
-            <a href=""><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.069815079059!2d-70.65410258480075!3d-33.44748758077482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5098cc5c8bf%3A0xe70c5f4648436e81!2sTarapac%C3%A1+1181%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1515613734985" frameborder="0" style="border:0" allowfullscreen></iframe></a>
+          <!-- contenido con info del cine -->
+          <div class="movie-card">
+            <div class="container">
+              <!-- mapa -->
+              <a href=""</a><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.069815079059!2d-70.65410258480075!3d-33.44748758077482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5098cc5c8bf%3A0xe70c5f4648436e81!2sTarapac%C3%A1+1181%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1515613734985" frameborder="0" style="border:0" allowfullscreen></iframe></a>
 
-            <!-- primera columna -->
-            <div class="about-movie">
-              <!-- <div class="row"> -->
-              <div class="colum-one">
-
+              <!-- fila estrellas y like -->
+              <div class="row">
                 <!-- clasificacion de estrellas -->
-                <fieldset class="starRating_2">
+                <fieldset class="starRating ">
                   <input id="rating1" type="radio" data-length="1" name="rating" value="1">
                   <label for="rating1"></label>
 
@@ -127,61 +121,59 @@
                   <input id="rating5" data-length="5" type="radio" name="rating" value="5">
                   <label for="rating5"></label>
                 </fieldset>
-                <span class="likes">200 likes</span>
-              </div>
-              <!--end colum-one -->
 
-              <!-- segunda columna -->
-              <div class="column-second" id="sec">
-                <!-- column-second -->
-                <p>Dirección:</p>
-                <p>Tarapacá 1181, Santiago, Región Metropolitana</p>
-                <p>Teléfono: (2) 2697 2979</p>
-                <p>horario: 12:00 - 21:30</p>
-                <a href="http://centroartealameda.cl/" target="_blank">Ir al sitio.</a>
-              </div>
+                <!--corazon y likes -->
+                <span class="glyphicon glyphicon-heart heart"></span><span class="likes">250 likes</span>
+
+              </div> <!-- fin fila -->
+
+              <div class="row">
+                <div class="col-md-12 info">
+                  <p>Dirección:</p>
+                  <p>Tarapacá 1181, Santiago, Región Metropolitana</p>
+                  <p>Teléfono: (2) 2697 2979</p>
+                  <p>horario: 12:00 - 21:30</p>
+                  <a class="especialLink" href="http://normandie.cl/" target="_blank">Ir al sitio.</a>
+                </div> <!-- fin col -->
+              </div> <!-- fin row -->
             </div>
-            <!--end -about-movie -->
-          </div>
-          <!--end container -->
-        </div>
-        <!--end movie-card-->
 
+            <!--end container -->
+          </div>
+          <!--end movie-card-->
+
+        </div>
+        <!-- fin modal content -->
       </div>
-      <!-- fin modal content -->
+      <!-- fin modal dialog -->
     </div>
-    <!-- fin modal dialog -->
-  </div>
-  <!-- fin modal cine 2 -->
+    <!-- fin modal cine 2 -->
 
-  <!-- modal cine 3 -->
-  <div class="modal fade" id="alameda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-md" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-              <h4 class="modal-title modal-title-cinemas" id="myModalLabel">Cine Arte Alameda</h4>
+     <!-- modal cine 3 -->
+    <div class="modal fade" id="alameda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <h4 class="modal-title modal-title-cinemas" id="myModalLabel">Cine Arte Alameda</h4>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- contenido con info del cine -->
-        <div class="movie-card">
-          <div class="container">
-            <!-- mapa -->
-            <a href=""><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d53264.91800996761!2d-70.70707416437777!3d-33.44781168262838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv+Libertador+Bernardo+O&#39;Higgins+117%2C+Santiago%2C+Santiago+Metropolitan!5e0!3m2!1ses!2scl!4v1515614207029" frameborder="0" style="border:0" allowfullscreen></iframe></a>
+          <!-- contenido con info del cine -->
+          <div class="movie-card">
+            <div class="container">
+              <!-- mapa -->
+              <a href=""><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d53264.91800996761!2d-70.70707416437777!3d-33.44781168262838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv+Libertador+Bernardo+O&#39;Higgins+117%2C+Santiago%2C+Santiago+Metropolitan!5e0!3m2!1ses!2scl!4v1515614207029" frameborder="0" style="border:0" allowfullscreen></iframe></a>
 
-            <!-- primera columna -->
-            <div class="about-movie">
-              <!-- <div class="row"> -->
-              <div class="colum-one">
-
+              <!-- fila estrellas y like -->
+              <div class="row">
                 <!-- clasificacion de estrellas -->
-                <fieldset class="starRating">
+                <fieldset class="starRating ">
                   <input id="rating1" type="radio" data-length="1" name="rating" value="1">
                   <label for="rating1"></label>
 
@@ -197,34 +189,35 @@
                   <input id="rating5" data-length="5" type="radio" name="rating" value="5">
                   <label for="rating5"></label>
                 </fieldset>
-                <span class="likes">200 likes</span>
-              </div>
-              <!--end colum-one -->
 
-              <!-- segunda columna -->
-              <div class="column-second" id="sec">
-                <!-- column-second -->
-                <p>Dirección:</p>
-                <p>Av Libertador Bernardo O'Higgins, Santiago, Metropolitan</p>
-                <p>Teléfono: (2) 2664 8821</p>
-                <p>horario: 12:00 - 23:00</p>
-                <a href="http://normandie.cl/" target="_blank">Ir al sitio.</a>
-              </div>
+                <!--corazon y likes -->
+                <span class="glyphicon glyphicon-heart heart"></span><span class="likes">250 likes</span>
+
+              </div> <!-- fin fila -->
+
+              <div class="row">
+                <div class="col-md-12 info">
+                 <p>Dirección:</p>
+                  <p>Av Libertador Bernardo O'Higgins, Santiago, Metropolitan</p>
+                  <p>Teléfono: (2) 2664 8821</p>
+                  <p>horario: 12:00 - 23:00</p>
+                  <a class="especialLink" href="http://centroartealameda.cl/" target="_blank">Ir al sitio.</a>
+                </div> <!-- fin col -->
+              </div> <!-- fin row -->
             </div>
-            <!--end -about-movie -->
+
+            <!--end container -->
           </div>
-          <!--end container -->
+          <!--end movie-card-->
+
         </div>
-        <!--end movie-card-->
-
+        <!-- fin modal content -->
       </div>
-      <!-- fin modal content -->
+      <!-- fin modal dialog -->
     </div>
-    <!-- fin modal dialog -->
-  </div>
-  <!-- fin modal cine 3 -->
+    <!-- fin modal cine 3 -->
 
-  <!-- fin modales de cines  -->
+  <!-- FIN MODALES DE CINES  -->
 
   <!-- Barra de navegación -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -382,10 +375,9 @@
   </div>
   <!-- Fin Sección de Películas -->
 
-  <!-- Sección de Salas de Cines -->
   <!-- seccion de cines artes -->
   <section>
-    <div class="container-fluid cinemas" id="cinema">
+    <div class="container-fluid cinemas" id="cinemas">
       <!-- tittulo -->
       <div class="row">
         <div class="col-xs-offset-3 col-1-md col-md-offset-5">
@@ -428,7 +420,6 @@
       </div>
       <!-- fin container fluid -->
   </section>
-  <!-- Fin Sección de Salas de Cines -->
 
   <!-- Próximos eventos -->
   <div id="events" class="container-fluid events">

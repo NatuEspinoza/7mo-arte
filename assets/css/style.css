@@ -362,7 +362,7 @@ table {
 .user-box h1{
   color: rgb(167, 28, 35)  ;
   font-size: 60px;
-  margin-top: -3%;
+  margin-top: 2px;
 }
 
 #text1 cite{
@@ -399,10 +399,9 @@ table {
 }
 
 
+
 /*-----------------------------------*/
-
 /*      ESTILO CARS DE LOS CINES     */
-
 /*-----------------------------------*/
 
 .modal-title-cinemas {
@@ -424,6 +423,7 @@ table {
   /* z-index: 1;*/
 }
 
+
 @media (max-width: 768px) {
   .container {
     width: 90% !important;
@@ -431,31 +431,41 @@ table {
     overflow: hidden;
     width: 100%;
   }
+
   .map {
-    /*  position: relative;*/
-    width: 85%;
-    height: 200px;
-    margin-top: 0.3em;
-    /*  margin-left: 1em;*/
-    margin-bottom: 0.8em;
-    text-align: center;
-    /*  border: 2px solid #FF533D;*/
-    border-radius: 0.7em;
-    /* z-index: 1;*/
+  /*  position: relative;*/
+  width: 85%;
+  height: 200px;
+  margin-top: 0.3em;
+  /*  margin-left: 1em;*/
+  margin-bottom: 0.8em;
+  text-align: center;
+  /*  border: 2px solid #FF533D;*/
+  border-radius: 0.7em;
+  /* z-index: 1;*/
   }
-  .heart {
+
+  .heart
+  {
     text-align: center;
+
   }
-  .star {
+
+  .star
+  {
     text-align: center;
+
   }
+
 }
+
 
 .movie-card {
   /*font-family: :"Lato", Arial, sans-serif;*/
   color: #A9A8A3;
-  /*  padding: 40px 0;*/
+/*  padding: 40px 0;*/
   /*font-size: 2em;*/
+
 }
 
 .movie-card .container {
@@ -469,7 +479,6 @@ table {
 }
 
 /*Estilo titulo del cine en el modal*/
-
 .movie-card .container .details .title1 {
   color: #000;
   font-size: 24px;
@@ -479,18 +488,12 @@ table {
   margin: 1em 2em;
 }
 
+
 /*Estilo corazon del like*/
-
 .glyphicon-heart:before {
-  content: "\e005";
-  color: indianred;
+    content: "\e005";
+    color: indianred;
 }
-
-/*.movie-card .container .likes:before {
-  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
-  position: relative;
-  top: 2px;
-}*/
 
 /*Estilo parrafos con direccion tel y horario*/
 
@@ -503,8 +506,8 @@ table {
   color: #B1B0AC;
 }
 
-/*start rate system style */
 
+/*start rate system style */
 fieldset {
   border-color: #fff;
   border-style: none;
@@ -528,30 +531,26 @@ fieldset {
   }
 }
 
-.star {
+.star
+{
   text-align: center;
   font-size: 1.5em;
 }
 
-.heart {
+.heart
+{
   text-align: center;
   color: red;
 }
 
-.info {
+.info
+{
   padding: 1em;
   font-size: 1.3em;
   text-align: left;
   padding: 0.7em 2em;
 }
 
-.info .especialLink {
-  text-align: center;
-}
-
-.especialLink {
-  text-align: center!important;
-}
 
 .starRating label {
   height: 50px;
