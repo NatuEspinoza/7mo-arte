@@ -109,7 +109,6 @@ h1 {
 /* Sección de Películas */
 
 .film {
-  background: #e6e6e6;
   text-align: center;
   height: 70vh;
 }
@@ -245,11 +244,19 @@ h2 {
 }
 
 .title-cinemas{
-  margin-top: 2em;
+  margin-top: -1%;
   color: #F7DC6F  ;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 600;
   font-family: 'Dancing Script', cursive;
+}
+
+.caption h3{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -1%;
 }
 
 /* Fin Salas de Cine */
@@ -257,13 +264,19 @@ h2 {
 /* Sección de eventos */
 
 .events {
-  background: #FF533D;
+  background: #e6e6e6;
 }
 
 .thumbnail {
   margin-top: 3em;
-  background: #e6e6e6;
+  background: rgba(249,231,159,0.63);
+  background: -moz-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(249,231,159,0.63)), color-stop(94%, rgba(249,231,159,0.63)), color-stop(99%, rgba(249,231,159,0.63)), color-stop(100%, rgba(249,231,159,0.45)));
+  background: -webkit-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: -o-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
   text-align: left;
+  border: none;
 }
 
 .menu-events {
