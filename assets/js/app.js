@@ -51,6 +51,25 @@ $(document).ready(function() {
   function renderError(error) {
     console.log(error);
   }
+
+  /**
+   * Función para filtrar eventos
+   *
+   */
+   $('#btn-prox-events').click(function() {
+       $('#prox-events').fadeIn(1000).show();
+       $('#my-events').hide();
+     });
+
+   $('#btn-my-events').click(function() {
+       $('#my-events').fadeIn(1000).show();
+       $('#prox-events').hide();
+     });
+
+   /**
+    * Fin de función para filtrar eventos
+    *
+    */
 });
 
 /*funcion cambio de login a registro*/
@@ -78,7 +97,6 @@ $('#register-form-link').click(function(e) {
 });
 
 */
-
 var login = document.getElementById('login-submit');
 login.addEventListener('click', function() {
   /*
@@ -125,9 +143,11 @@ login.addEventListener('click', function() {
   });
 });
 
-/*
+/**
  * Fin de Función para Carrusel
  */
+
+
 
 /*
   $.ajax({

@@ -4,7 +4,7 @@
 
 ***
 
-###### La app web  contiene dos `HTML` (una vista sin registrarse y una del usuario ya regustrado) y se divide secciones `<section>`.
+###### La app web  contiene dos `HTML` (una vista sin registrarse y una del usuario ya regustrado), se divide en secciones `<section>`. Cuenta con un `<nav>` global que permite navegar por las distintas secciones de la
 
 ## 1-Investigación
 
@@ -19,15 +19,8 @@ Por qué  van a los cine artes:
 * Gusto por lo vintage, clásico, lo retro…
 * Películas de cine independiente o poco conocidas
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-## 3-Definición del usuario
-=======
 ## 3-Diseño
->>>>>>> 18723459571093cae23f2a5195e6205152de7493
-=======
-## 3-Diseño
->>>>>>> Stashed changes
+
 
 ![Diseño / Sketching](assets/img/INICIAL.jpg)
 ![Diseño / Sketching](assets/img/PERFIL.jpg)
@@ -38,6 +31,8 @@ Por qué  van a los cine artes:
 · bootstrap
 · google font
 · jquery
+· Far
+
 
 
 #### Por Natalia, Vane, Vale y Yasna
