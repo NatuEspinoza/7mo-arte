@@ -36,7 +36,38 @@ h1 {
   float: left;
 }
 
+.navbar-inverse {
+  border-color: #0f1626;
+}
+
 /*Fin Nav Bar */
+
+/* lista de filtrado */
+.lista-container {
+  background: #0f1626;
+}
+.list-group {
+  display: -webkit-inline-box;
+  margin-top: 5em;
+}
+.list-group-item {
+  display: inline;
+  float: right;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .list-group {
+    display: block;
+    margin-top: 5em;
+  }
+  .list-group-item {
+    display: block;
+    float: none;
+  }
+
+}
+/* Fin lista de filtrado */
 
 /* Section Profile */
 
@@ -47,7 +78,7 @@ h1 {
   background-position: bottom;
   height: 30em;
   color: #FFF;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .user-box {
