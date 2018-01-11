@@ -20,31 +20,38 @@ h1 {
 }
 
 /* Nav Bar */
-
 .navbar {
-  background: #0f1626;
-  margin: 0;
+  background: #7E0B0B;
+  border: none;
+  font-family: 'Atma', cursive;
+  font-size: 20px;
+  color: #F7DC6F  ;
 }
 
 .logo-nav {
   width: 5em;
   height: auto;
+
 }
 
-#lista {
-  display: inline-block;
-  float: left;
+.navbar-inverse .navbar-nav>li>a{
+  color: #FFF;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #F7DC6F  ;
 }
 
 .navbar-inverse {
-  border-color: #0f1626;
+  border-color: rgb(167, 28, 35)  ;
 }
 
 /*Fin Nav Bar */
 
 /* lista de filtrado */
 .lista-container {
-  background: #0f1626;
+  background: #7E0B0B;
+  border-color: #7E0B0B;
 }
 .list-group {
   display: -webkit-inline-box;
@@ -81,6 +88,12 @@ h1 {
   margin-top: 0px;
 }
 
+.user-box h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  font-weight: 600;
+}
+
 .user-box {
   margin: 3em 0 3em 0;
   text-align: center;
@@ -96,18 +109,20 @@ h1 {
 /* Sección de Películas */
 
 .film {
-  background: #FF533D;
+  background: #e6e6e6;
   text-align: center;
+  height: 70vh;
 }
 
 .menu-film {
-  margin-top: 3em;
-  font-size: 2em;
-  background: #0f1626;
-  color: #FFF;
+  margin-top: 7%;
+  width: 17%;
+  font-size: 30px;
+  color: rgb(167, 28, 35)  ;
   border-radius: 0.2em;
-  border-color: #0f1626;
-  font-family: 'Oswald', sans-serif;
+  border: 1.5px solid #F7DC6F  ;
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
 }
 
 /* Carrusel */
@@ -221,14 +236,20 @@ h2 {
 /* Fin Sección de Películas */
 
 /* Salas de Cine */
+#cinema{
+  background-color: rgb(167, 28, 35)  ;
+}
 
 .cinema {
   height: 30em;
 }
 
-.title-cinema {
+.title-cinemas{
   margin-top: 2em;
-  text-align: center;
+  color: #F7DC6F  ;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
 }
 
 /* Fin Salas de Cine */
@@ -330,26 +351,6 @@ table {
   padding: 3em;
 }
 
-/*------------------------------------*/
-
-/*            SECCION CINES           */
-
-/*------------------------------------*/
-
-/*Estilo titulo cines*/
-
-.title-cinemas {
-  color: #FF533D;
-  margin-bottom: 1.5em;
-  margin-left: 1.5em;
-}
-
-/*Estilos nombre de los cines*/
-
-.title-small-cinema {
-  color: #FF533D;
-  text-align: center;
-}
 
 /*-----------------------------------*/
 
@@ -665,7 +666,7 @@ fieldset {
 /* Footer */
 
 .footer {
-  background: #0f1626;
+  background: #7E0B0B;;
   height: 5em;
   padding: 1em;
 }
