@@ -7,56 +7,72 @@
 }
 
 h1 {
-  color: #0f1626;
-  font-family: 'Oswald', sans-serif;
+  color: #7E0B0B;
+
+}
+
+a {
+  color: #7E0B0B;
 }
 
 .btn-primary {
-  background: #FF533D;
+  background: #FFF;
+  border-color: #8a2020;
 }
 
 .btn-primary:hover {
-  background: #0f1626;
+  background: #7E0B0B;
 }
 
 /* Nav Bar */
+
 .navbar {
   background: #7E0B0B;
   border: none;
   font-family: 'Atma', cursive;
   font-size: 20px;
-  color: #F7DC6F  ;
+  color: #F7DC6F;
 }
 
 .logo-nav {
   width: 5em;
   height: auto;
-
 }
 
-.navbar-inverse .navbar-nav>li>a{
+.navbar-inverse .navbar-nav>li>a {
   color: #FFF;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover{
-  color: #F7DC6F  ;
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #F7DC6F;
 }
 
 .navbar-inverse {
-  border-color: rgb(167, 28, 35)  ;
+  border-color: rgb(167, 28, 35);
 }
 
+.navbar-inverse .navbar-toggle {
+  border-color: #FFF;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #4e0404;
+}
 /*Fin Nav Bar */
 
 /* lista de filtrado */
+
 .lista-container {
   background: #7E0B0B;
   border-color: #7E0B0B;
 }
+
 .list-group {
   display: -webkit-inline-box;
   margin-top: 5em;
 }
+
 .list-group-item {
   display: inline;
   float: right;
@@ -72,23 +88,23 @@ h1 {
     display: block;
     float: none;
   }
-
 }
+
 /* Fin lista de filtrado */
 
 /* Section Profile */
 
 .profile {
   background-image: url(../img/gif.gif);
-	background-repeat: none;
-	background-size: cover;
-	background-position: bottom;
+  background-repeat: none;
+  background-size: cover;
+  background-position: bottom;
   height: 30em;
   color: #FFF;
   margin-top: 0px;
 }
 
-.user-box h1{
+.user-box h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
   font-weight: 600;
@@ -114,12 +130,12 @@ h1 {
 }
 
 .menu-film {
-  margin-top: 7%;
-  width: 17%;
+  margin-top: 10%;
+  width: 20%;
   font-size: 30px;
-  color: rgb(167, 28, 35)  ;
+  color: rgb(167, 28, 35);
   border-radius: 0.2em;
-  border: 1.5px solid #F7DC6F  ;
+  border: 1.5px solid #F7DC6F;
   font-weight: 600;
   font-family: 'Dancing Script', cursive;
 }
@@ -209,8 +225,7 @@ h1 {
 }
 
 h2 {
-  margin: 2em 0 1em;
-  font-family: 'Oswald', sans-serif;
+  margin-top: 1.2em;
 }
 
 .logo {
@@ -235,23 +250,22 @@ h2 {
 /* Fin Sección de Películas */
 
 /* Salas de Cine */
-#cinema{
-  background-color: rgb(167, 28, 35)  ;
+
+.cinemas {
+  background: rgb(167, 28, 35);
 }
 
-.cinema {
-  height: 30em;
-}
-
-.title-cinemas{
-  margin-top: -1%;
-  color: #F7DC6F  ;
+.title-cinemas {
+  color: #F7DC6F;
   font-size: 70px;
   font-weight: 600;
   font-family: 'Dancing Script', cursive;
 }
+.title-small-cinema {
+  color:#7E0B0B;
+}
 
-.caption h3{
+.caption h3 {
   font-family: 'Dancing Script', cursive;
   font-size: 30px;
   font-weight: 600;
@@ -269,28 +283,29 @@ h2 {
 
 .thumbnail {
   margin-top: 3em;
-  background: rgba(249,231,159,0.63);
-  background: -moz-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(249,231,159,0.63)), color-stop(94%, rgba(249,231,159,0.63)), color-stop(99%, rgba(249,231,159,0.63)), color-stop(100%, rgba(249,231,159,0.45)));
-  background: -webkit-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
-  background: -o-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: rgba(249, 231, 159, 0.63);
+  background: -moz-linear-gradient(-45deg, rgba(249, 231, 159, 0.63) 0%, rgba(249, 231, 159, 0.63) 94%, rgba(249, 231, 159, 0.63) 99%, rgba(249, 231, 159, 0.45) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(249, 231, 159, 0.63)), color-stop(94%, rgba(249, 231, 159, 0.63)), color-stop(99%, rgba(249, 231, 159, 0.63)), color-stop(100%, rgba(249, 231, 159, 0.45)));
+  background: -webkit-linear-gradient(-45deg, rgba(249, 231, 159, 0.63) 0%, rgba(249, 231, 159, 0.63) 94%, rgba(249, 231, 159, 0.63) 99%, rgba(249, 231, 159, 0.45) 100%);
+  background: -o-linear-gradient(-45deg, rgba(249, 231, 159, 0.63) 0%, rgba(249, 231, 159, 0.63) 94%, rgba(249, 231, 159, 0.63) 99%, rgba(249, 231, 159, 0.45) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(249, 231, 159, 0.63) 0%, rgba(249, 231, 159, 0.63) 94%, rgba(249, 231, 159, 0.63) 99%, rgba(249, 231, 159, 0.45) 100%);
   text-align: left;
   border: none;
 }
 
 .menu-events {
-  margin-top: 2.5em;
-  font-size: 2em;
-  background: #0f1626;
-  color: #FFF;
+  margin-top: 10%;
+  width: 20%;
+  font-size: 30px;
+  color: rgb(167, 28, 35);
   border-radius: 0.2em;
-  border-color: #0f1626;
-  font-family: 'Oswald', sans-serif;
+  border: 1.5px solid #F7DC6F;
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
 }
 
 .thumbnail a {
-  color: #0f1626;
+  color: #7E0B0B;
 }
 
 /* Calendario Eventos */
@@ -307,7 +322,9 @@ table {
 /* Fin Sección de eventos */
 
 /*------------------------------------*/
+
 /*         SECCION PRESENTATION       */
+
 /*------------------------------------*/
 
 .presentation {
@@ -333,7 +350,9 @@ table {
 }
 
 /*------------------------------------*/
+
 /*         SECCION TENDENCIAS         */
+
 /*------------------------------------*/
 
 /*Estilo seccion tendencias*/
@@ -357,35 +376,11 @@ table {
   color: #FFF;
 }
 
-/*Estilo seccion cines*/
-
-.cinemas {
-  background-color: #F0EAD6;
-  padding: 3em;
-}
-
-/*------------------------------------*/
-/*            SECCION CINES           */
-/*------------------------------------*/
-
-/*Estilo titulo cines*/
-
-.title-cinemas {
-  color: #FF533D;
-  margin-bottom: 1.5em;
-  margin-left: 1.5em;
-}
-
-/*Estilos nombre de los cines*/
-
-
-.title-small-cinema {
-  color: #FF533D;
-  text-align: center;
-}
 
 /*-----------------------------------*/
+
 /*      ESTILO CARS DE LOS CINES     */
+
 /*-----------------------------------*/
 
 .modal-title-cinemas {
@@ -407,7 +402,6 @@ table {
   /* z-index: 1;*/
 }
 
-
 @media (max-width: 768px) {
   .container {
     width: 90% !important;
@@ -415,41 +409,31 @@ table {
     overflow: hidden;
     width: 100%;
   }
-
   .map {
-  /*  position: relative;*/
-  width: 85%;
-  height: 200px;
-  margin-top: 0.3em;
-  /*  margin-left: 1em;*/
-  margin-bottom: 0.8em;
-  text-align: center;
-  /*  border: 2px solid #FF533D;*/
-  border-radius: 0.7em;
-  /* z-index: 1;*/
-  }
-
-  .heart
-  {
+    /*  position: relative;*/
+    width: 85%;
+    height: 200px;
+    margin-top: 0.3em;
+    /*  margin-left: 1em;*/
+    margin-bottom: 0.8em;
     text-align: center;
-
+    /*  border: 2px solid #FF533D;*/
+    border-radius: 0.7em;
+    /* z-index: 1;*/
   }
-
-  .star
-  {
+  .heart {
     text-align: center;
-
   }
-
+  .star {
+    text-align: center;
+  }
 }
-
 
 .movie-card {
   /*font-family: :"Lato", Arial, sans-serif;*/
   color: #A9A8A3;
-/*  padding: 40px 0;*/
+  /*  padding: 40px 0;*/
   /*font-size: 2em;*/
-  
 }
 
 .movie-card .container {
@@ -463,6 +447,7 @@ table {
 }
 
 /*Estilo titulo del cine en el modal*/
+
 .movie-card .container .details .title1 {
   color: #000;
   font-size: 24px;
@@ -472,11 +457,11 @@ table {
   margin: 1em 2em;
 }
 
-
 /*Estilo corazon del like*/
+
 .glyphicon-heart:before {
-    content: "\e005";
-    color: indianred;
+  content: "\e005";
+  color: indianred;
 }
 
 /*.movie-card .container .likes:before {
@@ -496,8 +481,8 @@ table {
   color: #B1B0AC;
 }
 
-
 /*start rate system style */
+
 fieldset {
   border-color: #fff;
   border-style: none;
@@ -521,36 +506,30 @@ fieldset {
   }
 }
 
-.star
-{
+.star {
   text-align: center;
   font-size: 1.5em;
 }
 
-.heart
-{
+.heart {
   text-align: center;
   color: red;
 }
 
-.info
-{
+.info {
   padding: 1em;
   font-size: 1.3em;
   text-align: left;
   padding: 0.7em 2em;
 }
 
-.info .especialLink
-{
+.info .especialLink {
   text-align: center;
 }
 
-.especialLink
-{
+.especialLink {
   text-align: center!important;
 }
-
 
 .starRating label {
   height: 50px;
@@ -614,10 +593,10 @@ fieldset {
   text-shadow: 0 0 20px #F9BF3B;
 }
 
-
-
 /*------------------------------------*/
+
 /*  ESTILO MODAL DE REGISTRO Y LOGIN  */
+
 /*------------------------------------*/
 
 .panel-login {
@@ -727,7 +706,8 @@ fieldset {
 /* Footer */
 
 .footer {
-  background: #7E0B0B;;
+  background: #7E0B0B;
+  ;
   height: 5em;
   padding: 1em;
 }
@@ -753,7 +733,7 @@ fieldset {
  */
 
 .center-block a {
-  color: #FF533D;
+  color: #FFF;
 }
 
 #social-fb:hover {
@@ -771,4 +751,3 @@ fieldset {
 #social-em:hover {
   color: #f39c12;
 }
-
