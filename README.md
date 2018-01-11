@@ -10,7 +10,7 @@
 
 ## 2-Definición del usuario
 
-· Al usuario que va enfocado este producto es al que va frecuentemente a salas de cine arte y a un usuario curioso que busca alternativas al cine tradicional.
+Al usuario que va enfocado este producto es al que va frecuentemente a salas de cine arte y a un usuario curioso que busca alternativas al cine tradicional.
 Por qué  van a los cine artes:
 * Busca economía (bajo costo en el valor de las entradas)
 * Ambiente más íntimo
@@ -25,13 +25,24 @@ Por qué  van a los cine artes:
 ![Diseño / Sketching](assets/img/INICIAL.jpg)
 ![Diseño / Sketching](assets/img/PERFIL.jpg)
 
+## 4-Planificación y organización
+
+Para el proyecto fue fundamental dividirnos ciertas tareas, sin embargo el trabajo en general todas aportamos en las distintas etapas.
+
+* Natalia Espinoza y Vanessa Martínez: Diseño de experiencia de usuario, investigación del usuario, diseño, maquetado.
+
+* Yasna Valenzuela y Vale Santeliz: Trabajo con OMDb API (base de datos), generar una data, funciones de login
+
+
 
 - Recursos:
 
-· bootstrap
+· Frameworks bootstrap
 · google font
 · jquery
-· Far
+· Firebase
+· OMDb API (base de datos)
+
 
 
 

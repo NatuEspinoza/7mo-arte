@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -111,6 +112,7 @@
       </div>
     </div>
   </div>
+
   <!-- fin modal iniciar secion -->
 
   <!-- modales para cines -->
@@ -280,6 +282,44 @@
               <!-- <div class="row"> -->
               <div class="colum-one">
 
+  <!-- modales para cines -->
+  <!-- modal cine 1 -->
+  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!-- parte superior del modal -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+        <!-- contenido -->
+        <!-- modal cine 1 -->
+        <div class="movie-card">
+          <div class="container">
+
+            <!--    <div class="row">
+        <div class="col-xs-12 col-lg-6"> -->
+            <a href=""><iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.424933058628!2d-70.64248674647605!3d-33.43823404431558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c599482afe51%3A0x995c385d969e5069!2sJos%C3%A9+Victorino+Lastarria+181%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1515589255631" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></a>
+
+            <!-- descripcion del cine -->
+            <!-- <div class="back-cover">
+            <div class="details">
+              <div class="title1">El Biógrafo</div>
+            </div>
+          </div> -->
+
+            <!-- primera columna -->
+            <div class="about-movie">
+              <div class="colum-one">
+                <div class="details">
+                  <div class="title1">El Biógrafo</div>
+                </div>
+
+                <!-- imagen del cine -->
+                <a href="#"><img src="assets/img/cines/biografo.jpg" class="img-biografo"></a>
+
                 <!-- clasificacion de estrellas -->
                 <fieldset class="starRating">
                   <input id="rating1" type="radio" data-length="1" name="rating" value="1">
@@ -289,7 +329,13 @@
                   <label for="rating2"></label>
 
                   <input id="rating3" type="radio" data-length="3" name="rating" value="3">
+
                   <label for="rating3"></label>
+
+
+                  <label for="rating3"></label>
+
+
 
                   <input id="rating4" data-length="4" type="radio" name="rating" value="4">
                   <label for="rating4"></label>
@@ -297,11 +343,16 @@
                   <input id="rating5" data-length="5" type="radio" name="rating" value="5">
                   <label for="rating5"></label>
                 </fieldset>
+
                 <span class="likes">200 likes</span>
+
+                <span class="likes">90 likes</span>
+
               </div>
               <!--end colum-one -->
 
               <!-- segunda columna -->
+
               <div class="column-second" id="sec">
                 <!-- column-second -->
                 <p>Dirección:</p>
@@ -311,11 +362,23 @@
                 <a href="http://normandie.cl/" target="_blank">Ir al sitio.</a>
               </div>
             </div>
+
+              <div class="colum-second">
+                <p>Dirección: José Victorino Lastarria 181, Santiago, Región Metropolitana</p>
+                <p>Teléfono: (2) 2664 8821</p>
+                <p>horario: 13:00 - 23:30</p>
+              </div>
+            </div>
+
+            <!--  </div>
+      </div> -->
+
             <!--end -about-movie -->
           </div>
           <!--end container -->
         </div>
         <!--end movie-card-->
+
 
       </div>
       <!-- fin modal content -->
@@ -625,12 +688,297 @@
         <input type="text" id="title" class="form-control">
         <button id="searchBtn" class="btn btn-primary btn-block">Search</button>
         <ul id="results" class="list-group">
+=======
 
-        </ul>
+
+
+
+>>>>>>> Stashed changes
+
       </div>
     </div>
   </div>
 -->
+
+
+  <!-- seccion del la barra de navegacion  -->
+  <section>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- encabezado del menu -->
+        <div class="navbar-header">
+          <!-- menu tipo hamburguesa cuando se vea en dispositivos pequenos -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <!-- sr-only = se mostrara la navegacion solo en dispositivos de lectura, menu tipo hamburguesa-->
+            <span class="sr-only">Navegacion</span>
+            <!-- estas son las lineas del menu -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- logo -->
+          <img src="assets/img/logo.png" alt="Logo" class="logo-nav">
+
+        </div>
+        <!-- fin navbar header -->
+
+        <!-- elementos del menu -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- formulario de busqueda -->
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar por título, año, director, país...">
+            </div>
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </form>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-toggle="modal" data-target="#miModal" href="#">Iniciar Secion</a></li>
+          </ul>
+        </div>
+        <!-- fin elementos menu -->
+      </div>
+      <!-- fin container fluid -->
+    </nav>
+  </section>
+
+  <!-- seccion presentacion pag -->
+  <section class=" container-fluid presentation">
+    <div class="user-box">
+      <h1>7mo Arte</h1>
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-4 col-md-3">
+          <p class="summary">Pag del 7mo</p>
+        </div>
+        <!-- fin col -->
+      </div>
+      <!-- fin fila -->
+  </section>
+  <!-- fin seccion de presentacion -->
+
+  <!-- seccion tendecia peliculas -->
+  <section>
+    <div class="container-fluid film">
+      <!-- tendency -->
+      <div class="row">
+        <select class="menu-film">
+          <option>Peliculas</option>
+          <option>Thriller</option>
+          <option>Terror</option>
+          <option>Documentales</option>
+          <option>Ciencia ficción</option>
+        </select>
+      </div>
+      <!-- Fin Filtro desplegable -->
+
+      <!-- Carrusel -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="carousel carousel-showsixmoveone slide" id="carousel123">
+              <div class="carousel-inner">
+                <div class="item">
+                  <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="http://www.filarmonia.org/image.axd?picture=2016%2F2%2F500x500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs-12 col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://www.moviescoremedia.com/covers/2016/hallow.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://78.media.tumblr.com/06dc5e939348a4949578db37c9a32344/tumblr_nufp2a3U2a1qmwd3eo1_500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://i.pinimg.com/736x/02/71/df/0271df6af1c6f18f8a1b822ba1464aa5--katharine-hepburn-kate-hepburn.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="http://agenda.devenado.com/IMG/el-origen-del-terror-en-amityville-cine-id11061_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="http://agenda.devillamercedes.com/IMG/mio-o-de-nadie-2d-sub-id8004_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://www.moviescoremedia.com/covers/2016/hallow.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://78.media.tumblr.com/06dc5e939348a4949578db37c9a32344/tumblr_nufp2a3U2a1qmwd3eo1_500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://i.pinimg.com/736x/02/71/df/0271df6af1c6f18f8a1b822ba1464aa5--katharine-hepburn-kate-hepburn.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="http://agenda.devenado.com/IMG/el-origen-del-terror-en-amityville-cine-id11061_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="http://agenda.devillamercedes.com/IMG/mio-o-de-nadie-2d-sub-id8004_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="http://agenda.devenado.com/IMG/el-hilo-rojo-id6659_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="http://agenda.devenado.com/IMG/el-origen-del-terror-en-amityville-cine-id11061_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://i.pinimg.com/736x/02/71/df/0271df6af1c6f18f8a1b822ba1464aa5--katharine-hepburn-kate-hepburn.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="http://agenda.devenado.com/IMG/el-origen-del-terror-en-amityville-cine-id11061_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="http://agenda.devillamercedes.com/IMG/mio-o-de-nadie-2d-sub-id8004_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="http://agenda.devenado.com/IMG/el-hilo-rojo-id6659_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://ecx.images-amazon.com/images/I/61XAyISx24L._SL500_.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="http://agenda.devenado.com/IMG/el-hilo-rojo-id6659_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="http://agenda.devenado.com/IMG/el-origen-del-terror-en-amityville-cine-id11061_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="http://agenda.devillamercedes.com/IMG/mio-o-de-nadie-2d-sub-id8004_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://www.moviescoremedia.com/covers/2016/hallow.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://ecx.images-amazon.com/images/I/61XAyISx24L._SL500_.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="http://www.filarmonia.org/image.axd?picture=2016%2F2%2F500x500.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://ecx.images-amazon.com/images/I/61XAyISx24L._SL500_.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="http://agenda.devillamercedes.com/IMG/mio-o-de-nadie-2d-sub-id8004_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="http://agenda.devenado.com/IMG/el-hilo-rojo-id6659_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://78.media.tumblr.com/06dc5e939348a4949578db37c9a32344/tumblr_nufp2a3U2a1qmwd3eo1_500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="http://www.filarmonia.org/image.axd?picture=2016%2F2%2F500x500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://www.moviescoremedia.com/covers/2016/hallow.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item active">
+                  <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="http://agenda.devillamercedes.com/IMG/mio-o-de-nadie-2d-sub-id8004_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="http://agenda.devenado.com/IMG/el-hilo-rojo-id6659_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://ecx.images-amazon.com/images/I/61XAyISx24L._SL500_.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="http://www.filarmonia.org/image.axd?picture=2016%2F2%2F500x500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://www.moviescoremedia.com/covers/2016/hallow.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://78.media.tumblr.com/06dc5e939348a4949578db37c9a32344/tumblr_nufp2a3U2a1qmwd3eo1_500.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://ecx.images-amazon.com/images/I/61XAyISx24L._SL500_.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://ecx.images-amazon.com/images/I/61XAyISx24L._SL500_.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="http://www.filarmonia.org/image.axd?picture=2016%2F2%2F500x500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://www.moviescoremedia.com/covers/2016/hallow.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://78.media.tumblr.com/06dc5e939348a4949578db37c9a32344/tumblr_nufp2a3U2a1qmwd3eo1_500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="https://i.pinimg.com/736x/02/71/df/0271df6af1c6f18f8a1b822ba1464aa5--katharine-hepburn-kate-hepburn.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-12 col-sm-4 col-md-2"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://ecx.images-amazon.com/images/I/61XAyISx24L._SL500_.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-1"><a href="#"><img src="http://www.filarmonia.org/image.axd?picture=2016%2F2%2F500x500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-2"><a href="#"><img src="https://ugc.kn3.net/i/760x/http://www.moviescoremedia.com/covers/2016/hallow.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-3"><a href="#"><img src="https://78.media.tumblr.com/06dc5e939348a4949578db37c9a32344/tumblr_nufp2a3U2a1qmwd3eo1_500.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-4"><a href="#"><img src="https://i.pinimg.com/736x/02/71/df/0271df6af1c6f18f8a1b822ba1464aa5--katharine-hepburn-kate-hepburn.jpg" class="img-responsive"></a></div>
+                  <div class="hidden-xs col-sm-4 col-md-2 cloneditem-5"><a href="#"><img src="http://agenda.devenado.com/IMG/el-origen-del-terror-en-amityville-cine-id11061_1-w500-h500-m1.jpg" class="img-responsive"></a></div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel123" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+              <a class="right carousel-control" href="#carousel123" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Carrusel -->
+    </div>
+    <!-- fin container fluid -->
+  </section>
+  <!-- fin seccion de tendencias -->
+
+
+
+  <!-- seccion de cines artes -->
+  <section>
+    <div class="container-fluid cinemas">
+      <!-- tittulo -->
+      <div class="row">
+        <div class="col-xs-offset-3 col-1-md col-md-offset-5">
+          <h2 class="title-cinemas">CINES</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- thumbnail 1 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="#"><img class="small-cinema" src="assets/img/cines/biografo.jpg" alt="biografo"></a>
+            <div class="caption">
+              <h3 class="title-small-cinema">El Biógrafo</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- thumbnail 2 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="#"><img class="small-cinema" src="assets/img/cines/normandie.jpg" alt="normandie"></a>
+            <div class="caption">
+              <h3 class="title-small-cinema">Normandie</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- thumbnail 3 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="#"><img class="small-cinema" src="assets/img/cines/alameda.jpg" alt="alameda"></a>
+            <div class="caption">
+              <h3 class="title-small-cinema">Alameda</h3>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- fin container fluid -->
+  </section>
+
+  <!-- seccion con proximos eventos en los cines arte -->
+  <section>
+    <!-- Próximos eventos -->
+    <div id="events" class="container-fluid events">
+      <!-- Filtro desplegable -->
+      <div class="container-fluid film">
+        <div class="row">
+          <select class="menu-film">
+          <option>Proximos Eventos</option>
+          <option>Eventos</option>
+        </select>
+        </div>
+        <!-- Fin Filtro desplegable -->
+        <div class="bs-example" data-example-id="thumbnails-with-custom-content">
+          <div class="row">
+            <div class="col-sm-3 col-md-3">
+              <div class="thumbnail">
+                <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMyMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGQzOTFlYmQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZDM5MWViZCI+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTguNDc2NTYyNSIgeT0iMTA3LjIiPjMyMHgyMDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+                  data-holder-rendered="true">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <div class="thumbnail">
+                <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMyMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGQzOTJjMGMgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZDM5MmMwYyI+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTguNDc2NTYyNSIgeT0iMTA3LjIiPjMyMHgyMDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+                  data-holder-rendered="true">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <div class="thumbnail">
+                <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMyMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGQzOGQ2MDAgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZDM4ZDYwMCI+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTguNDc2NTYyNSIgeT0iMTA3LjIiPjMyMHgyMDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+                  data-holder-rendered="true">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <div class="thumbnail">
+                <img data-src="holder.js/100%x200" alt="100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMyMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYwZGQzOGQ2MDAgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjBkZDM4ZDYwMCI+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTguNDc2NTYyNSIgeT0iMTA3LjIiPjMyMHgyMDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4="
+                  data-holder-rendered="true">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin Próximos eventos -->
+
+
+  </section>
+
+  <!-- seccion footer -->
+  <footer>
+    7°Arte <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2018
+  </footer>
+
+
+
 
 
   <!-- Scripts -->

@@ -19,6 +19,7 @@ h1 {
   background: #0f1626;
 }
 
+
 /* Nav Bar */
 
 .navbar {
@@ -73,9 +74,9 @@ h1 {
 
 .profile {
   background-image: url(../img/gif.gif);
-  background-repeat: none;
-  background-size: cover;
-  background-position: bottom;
+	background-repeat: none;
+	background-size: cover;
+	background-position: bottom;
   height: 30em;
   color: #FFF;
   margin-top: 0px;
@@ -253,6 +254,10 @@ h2 {
   border-radius: 0.2em;
   border-color: #0f1626;
   font-family: 'Oswald', sans-serif;
+}
+
+.thumbnail a {
+  color: #0f1626;
 }
 
 /* Calendario Eventos */
