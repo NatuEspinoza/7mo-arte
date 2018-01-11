@@ -8,9 +8,10 @@ $(document).ready(function() {
   searchBtn.click(function searchMovie() {
     /* creo una variable que guardara los datos del input */
     var titleText = titleFilm.val();
-    //alert('searchMovie ' + titleText);
+    /* alert('searchMovie ' + titleText); */
     /* creo variable en donde guarda la informacion de la data */
     /* que en este caso seria los titulos de peliculas */
+    /*comienzo a consumir la api */
     var url = 'http://www.omdbapi.com/?apikey=3a181f1c&s=' + titleText;
     console.log(url);
     $.ajax({
