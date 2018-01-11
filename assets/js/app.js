@@ -70,6 +70,7 @@ $(document).ready(function() {
     * Fin de función para filtrar eventos
     *
     */
+observador();
 });
 
 /*funcion cambio de login a registro*/
@@ -90,6 +91,94 @@ $('#register-form-link').click(function(e) {
   e.preventDefault();
 });
 
+//api key
+ // Initialize Firebase
+var config = {
+    apiKey: "AIzaSyBdsh0qxbd0g-ktxGCjbYrzI1Ekku7mkHw",
+    authDomain: "septimo-arte.firebaseapp.com",
+    databaseURL: "https://septimo-arte.firebaseio.com",
+    projectId: "septimo-arte",
+    storageBucket: "septimo-arte.appspot.com",
+    messagingSenderId: "558914481754"
+  };
+  firebase.initializeApp(config);
+
+  function registrar() {
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password1').value;
+  console.log(email);
+  console.log(password);
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then(function(){
+    verificar();
+  })
+  .catch(function(error) {//si no resulta la creacion de usuario, se captura el error que produce
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  console.log(errorCode);
+  console.log(errorMessage);
+  });
+};
+
+function verificar() {
+  var user = firebase.auth().currentUser;
+  user.sendEmailVerification()
+  .then(function() {
+    // Email sent.
+    console.log('enviando correo...');
+  }).catch(function(error) {
+  // An error happened.
+  console.log(error);
+  });
+};
+
+
+function ingresar(){
+  var email = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {//si no funciona el ingreso de usuario, arroja error existente
+
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  console.log(errorCode);
+  console.log(errorMessage);
+  console.log(email);
+  console.log(password);
+
+  $('body').append('<div id="container1">' + '<a href="profile.html"></a>' + '</div>');
+  var url = $('profile.html');
+  $(location).attr('href', url);
+  });
+}
+
+function observador(){
+  //observa los cambios de estado de usuario en la página
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      console.log('existe usario activo');
+      // User is signed in.
+      var displayName = user.displayName;
+      var email = user.email;
+      console.log('****************');
+      console.log(user.emailVerified);
+      console.log('****************');
+
+      var emailVerified = user.emailVerified;
+      var photoURL = user.photoURL;
+      var isAnonymous = user.isAnonymous;
+      var uid = user.uid;
+      var providerData = user.providerData;
+      // ...
+    } else {
+    // User is signed out.
+    console.log('no existe usuario activo');
+    // ...
+    }
+  });
+}
+
 
 /**
 
@@ -97,11 +186,13 @@ $('#register-form-link').click(function(e) {
 });
 
 */
+/*
 var login = document.getElementById('login-submit');
 login.addEventListener('click', function() {
   /*
    *console.log('diste un click');
    */
+   /*
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
 
@@ -112,9 +203,9 @@ login.addEventListener('click', function() {
     // ...
   });
   console.log(username);
-  console.log(pasword);
+  console.log(password);
 });
-
+*/
 /*
 
  * Función para Carrusel
