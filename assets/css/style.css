@@ -270,15 +270,23 @@ h2 {
 
 /* Salas de Cine */
 
+.title-small-cinema {
+  color: #FF533D;
+  text-align: center;
+}
+
+
 .cinemas {
   background: rgb(167, 28, 35);
 }
 
 .title-cinemas {
+  margin: 2em 0 0.5em 0;
   color: #F7DC6F;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 600;
   font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
 .title-small-cinema {
   color:#7E0B0B;
@@ -407,6 +415,7 @@ table {
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
   font-weight: 600;
+  margin: 2em 0 0.5em 0;
 }
 
 .menu-ten {
@@ -425,32 +434,6 @@ table {
   font-family: 'Dancing Script', cursive;
 }
 
-/*Estilo seccion cines*/
-
-.cinemas {
-  background-color: rgb(167, 28, 35)  ;
-  padding: 3em;
-}
-
-/*------------------------------------*/
-/*            SECCION CINES           */
-/*------------------------------------*/
-
-/*Estilo titulo cines*/
-
-.title-cinemas {
-  color: #FF533D;
-  margin-bottom: 1.5em;
-  margin-left: 1.5em;
-}
-
-/*Estilos nombre de los cines*/
-
-
-.title-small-cinema {
-  color: #FF533D;
-  text-align: center;
-}
 
 
 /*-----------------------------------*/
