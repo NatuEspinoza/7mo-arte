@@ -54,12 +54,12 @@
                     </div>
                     <div class="form-group text-center">
                       <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-                      <label for="remember"> Remember Me</label>
+                      <label for="remember"> Recordar cuenta</label>
                     </div>
                     <div class="form-group">
                       <div class="row">
                         <div class="col-sm-6 col-sm-offset-3">
-                          <button type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" onclick="ingresar()" value="Log In"></button>
+                          <button type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" onclick="ingresar()" value="Log In">Iniciar Sesión</button>
                         </div>
                       </div>
                     </div>
@@ -67,7 +67,7 @@
                       <div class="row">
                         <div class="col-lg-12">
                           <div class="text-center">
-                            <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
+                            <a href="" tabindex="5" class="forgot-password">Olvidaste tu contraseña?</a>
                           </div>
                         </div>
                       </div>
@@ -86,8 +86,7 @@
                     <div class="form-group">
                       <div class="row">
                         <div class="col-sm-6 col-sm-offset-3">
-                          <buttontype="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" onclick="registrar()" value="Register Now">
-                            </button>
+                          <button type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" onclick="registrar()" value="Register Now"> Registrarme</button>
                         </div>
                       </div>
                     </div>
@@ -359,7 +358,7 @@
           </form>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a data-toggle="modal" data-target="#miModal" href="#">Iniciar Secion</a></li>
+            <li><a data-toggle="modal" data-target="#miModal" href="#">Iniciar Sesión</a></li>
           </ul>
         </div>
         <!-- fin elementos menu -->
@@ -370,17 +369,28 @@
 
   <!-- seccion presentacion pag -->
   <section class=" container-fluid presentation">
-    <div class="user-box" id="page1">
-      <h1>7mo Arte</h1>
-      <div class="row">
+    <div class="row">
+    <div class="col-sm-4 col-md-4  present-box">
+      <img src="assets/img/logo.png" class="logo-pres">
         <div class="desc" id="text1">
-          <cite>" 7mo Arte es un espacio donde podras encontrar informacion sobre lugares emblematicos que proyectan cine arte, de esta forma esperamos acercar al público curioso de conocer un cine de calidad; y facilitar a los fanaticos los distintos horarios de estas artes audiovisuales. "</cite>
+          <p>" Somos un espacio donde podrás encontrar información sobre lugares emblemáticos que proyectan cine arte, de esta forma esperamos acercar al público curioso de conocer un cine que acerque a la cultura y facilitar a los fanáticos los distintos cines con sus carteleras y eventos. "</p>
         </div>
         <!-- fin col -->
       </div>
+    </div>
       <!-- fin fila -->
   </section>
   <!-- fin seccion de presentacion -->
+
+  <!-- lista de peliculas filtradas -->
+  <div class="container-fluid lista-container">
+    <div class="row">
+      <div class="lista">
+        <ul class="list-group" id="results"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Sección de Películas -->
 
   <!-- seccion tendecia peliculas -->
   <section>
@@ -601,14 +611,14 @@
 
 
   <!-- Sección footer -->
-  <footer class="container-fluid footer" style="margin: 0;">
+  <footer class="container-fluid footer">
     <div class="row">
       <div class="text-center center-block">
-        <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-        <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-        <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-        <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-      </div>
+               <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+             <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+             <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+             <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+</div>
     </div>
   </footer>
 
