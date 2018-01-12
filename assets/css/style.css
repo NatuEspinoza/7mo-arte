@@ -22,6 +22,17 @@ a {
 
 .btn-primary:hover {
   background: #7E0B0B;
+  background: rgba(109,0,25,0.66);
+  background: -moz-linear-gradient(-45deg, rgba(109,0,25,0.66) 0%, rgba(109,0,25,0.65) 0%, rgba(109,0,25,0.65) 10%, rgba(169,3,41,0.65) 50%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(109,0,25,0.66)), color-stop(0%, rgba(109,0,25,0.65)), color-stop(10%, rgba(109,0,25,0.65)), color-stop(50%, rgba(169,3,41,0.65)));
+  background: -webkit-linear-gradient(-45deg, rgba(109,0,25,0.66) 0%, rgba(109,0,25,0.65) 0%, rgba(109,0,25,0.65) 10%, rgba(169,3,41,0.65) 50%);
+  background: -o-linear-gradient(-45deg, rgba(109,0,25,0.66) 0%, rgba(109,0,25,0.65) 0%, rgba(109,0,25,0.65) 10%, rgba(169,3,41,0.65) 50%);
+  background: -ms-linear-gradient(-45deg, rgba(109,0,25,0.66) 0%, rgba(109,0,25,0.65) 0%, rgba(109,0,25,0.65) 10%, rgba(169,3,41,0.65) 50%);
+  background: linear-gradient(135deg, rgba(109,0,25,0.66) 0%, rgba(109,0,25,0.65) 0%, rgba(109,0,25,0.65) 10%, rgba(169,3,41,0.65) 50%);
+}
+
+.btn-primary:hover {
+  background: rgb(167, 28, 35)  ;
 }
 
 /* Nav Bar */
@@ -127,16 +138,23 @@ a {
 .film {
   text-align: center;
   background: #e6e6e6;
-  height: 70vh;
+  height: 80vh;
 }
 
 .menu-film {
   margin-top: 10%;
   width: 20%;
+  background: rgba(249,231,159,0.63);
+  background: -moz-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(249,231,159,0.63)), color-stop(94%, rgba(249,231,159,0.63)), color-stop(99%, rgba(249,231,159,0.63)), color-stop(100%, rgba(249,231,159,0.45)));
+  background: -webkit-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: -o-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
   font-size: 30px;
   color: rgb(167, 28, 35);
-  border-radius: 0.2em;
+  border-radius: 6px;
   border: 1.5px solid #F7DC6F;
+  border-color: none;
   font-weight: 600;
   font-family: 'Dancing Script', cursive;
 }
@@ -280,26 +298,26 @@ h2 {
 
 .events {
   background: #e6e6e6;
+  height: 90vh;
 }
 
 .thumbnail {
-  margin-top: 3em;
   background: rgba(249, 231, 159, 0.63);
   background: -moz-linear-gradient(-45deg, rgba(249, 231, 159, 0.63) 0%, rgba(249, 231, 159, 0.63) 94%, rgba(249, 231, 159, 0.63) 99%, rgba(249, 231, 159, 0.45) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(249, 231, 159, 0.63)), color-stop(94%, rgba(249, 231, 159, 0.63)), color-stop(99%, rgba(249, 231, 159, 0.63)), color-stop(100%, rgba(249, 231, 159, 0.45)));
   background: -webkit-linear-gradient(-45deg, rgba(249, 231, 159, 0.63) 0%, rgba(249, 231, 159, 0.63) 94%, rgba(249, 231, 159, 0.63) 99%, rgba(249, 231, 159, 0.45) 100%);
   background: -o-linear-gradient(-45deg, rgba(249, 231, 159, 0.63) 0%, rgba(249, 231, 159, 0.63) 94%, rgba(249, 231, 159, 0.63) 99%, rgba(249, 231, 159, 0.45) 100%);
   background: -ms-linear-gradient(-45deg, rgba(249, 231, 159, 0.63) 0%, rgba(249, 231, 159, 0.63) 94%, rgba(249, 231, 159, 0.63) 99%, rgba(249, 231, 159, 0.45) 100%);
+  margin-top: 3%;
   text-align: left;
   border: none;
 }
 
 .menu-events {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 20%;
   font-size: 30px;
   color: rgb(167, 28, 35);
-  border-radius: 0.2em;
   border: 1.5px solid #F7DC6F;
   font-weight: 600;
   font-family: 'Dancing Script', cursive;
@@ -392,12 +410,47 @@ table {
 }
 
 .menu-ten {
-  margin-top: 1em;
-  font-size: 2em;
-  background: #0f1626;
-  color: #FFF;
+  background: rgba(249,231,159,0.63);
+  background: -moz-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(249,231,159,0.63)), color-stop(94%, rgba(249,231,159,0.63)), color-stop(99%, rgba(249,231,159,0.63)), color-stop(100%, rgba(249,231,159,0.45)));
+  background: -webkit-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: -o-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(249,231,159,0.63) 0%, rgba(249,231,159,0.63) 94%, rgba(249,231,159,0.63) 99%, rgba(249,231,159,0.45) 100%);
+  width: 17%;
+  font-size: 30px;
+  color: rgb(167, 28, 35)  ;
+  border-radius: 0.2em;
+  border-color: none;
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
 }
 
+/*Estilo seccion cines*/
+
+.cinemas {
+  background-color: rgb(167, 28, 35)  ;
+  padding: 3em;
+}
+
+/*------------------------------------*/
+/*            SECCION CINES           */
+/*------------------------------------*/
+
+/*Estilo titulo cines*/
+
+.title-cinemas {
+  color: #FF533D;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+}
+
+/*Estilos nombre de los cines*/
+
+
+.title-small-cinema {
+  color: #FF533D;
+  text-align: center;
+}
 
 
 /*-----------------------------------*/
